@@ -14,57 +14,36 @@ export default function Resources() {
 
 	return (
 		<main className="relative w-full min-h-screen overflow-x-hidden bg-black text-white">
-			<section className="relative w-full" style={{ height: 463.22 }}>
+			<section className="relative w-full min-h-[300px] sm:min-h-[380px] md:min-h-[463px]">
 				<Image
 					src="/bckgrnd%201.png"
 					alt="Top Background"
-					width={1440}
-					height={399}
-					className="absolute top-0 left-0 w-full z-10 object-cover"
-					style={{
-						height: 399,
-					}}
+					fill
+					className="object-cover z-10"
 					priority
 				/>
 
 				<div
-					className="absolute font-bold z-20"
-					style={{
-						[isRTL ? "right" : "left"]: "122px",
-						top: "184px",
-						width: 367,
-						height: 45,
-						fontFamily: "Orbitron",
-						fontWeight: 700,
-						fontSize: 36,
-						lineHeight: "100%",
-						textTransform: "capitalize",
-						color: "rgba(255, 255, 255, 1)",
-						opacity: 1,
-					}}
+					className="relative z-20 flex flex-col justify-end px-6 sm:px-10 md:px-[122px] pt-32 sm:pt-40 md:pt-[184px] pb-10"
+					style={{ direction: isRTL ? "rtl" : "ltr" }}
 				>
-					{t("resources.page_title")}
-				</div>
+					<h1
+						className="font-bold text-2xl sm:text-3xl md:text-4xl capitalize"
+						style={{ fontFamily: "Orbitron" }}
+					>
+						{t("resources.page_title")}
+					</h1>
 
-				<div
-					className="absolute z-20"
-					style={{
-						[isRTL ? "right" : "left"]: "122px",
-						top: "249px",
-						width: 901.75,
-						height: 32,
-						fontFamily: "Commissioner",
-						fontWeight: 400,
-						fontSize: 20,
-						lineHeight: "32px",
-						textTransform: "capitalize",
-						color: "rgba(255, 255, 255, 0.8)",
-						opacity: 1,
-						direction: isRTL ? "rtl" : "ltr",
-						textAlign: isRTL ? "right" : "left",
-					}}
-				>
-					{t("resources.page_description")}
+					<p
+						className="mt-4 max-w-[900px] text-base sm:text-lg md:text-xl capitalize"
+						style={{
+							fontFamily: "Commissioner",
+							lineHeight: "32px",
+							color: "rgba(255, 255, 255, 0.8)",
+						}}
+					>
+						{t("resources.page_description")}
+					</p>
 				</div>
 
 				<div
@@ -82,57 +61,21 @@ export default function Resources() {
 			</section>
 
 			<section className="relative mx-auto max-w-[1193.59px] px-6 py-12" dir={isRTL ? "rtl" : "ltr"}>
-				<div
-					style={{
-						display: "flex",
-						width: 901,
-						height: 48,
-						gap: "24px",
-						justifyContent: isRTL ? "flex-end" : "flex-start",
-						[isRTL ? "marginRight" : "marginLeft"]: "122px",
-					}}
-				>
+				<div className="flex flex-wrap gap-3 sm:gap-4 md:gap-6">
 					{tabs.map((tab) => (
 						<button
 							key={tab.id}
 							onClick={() => setActiveTab(tab.id)}
+							className="h-12 px-6 sm:px-8 rounded-[10px] flex items-center justify-center cursor-pointer transition-all duration-300 whitespace-nowrap text-sm sm:text-base capitalize"
 							style={{
-								width: tab.id === "all" ? 95 : 183,
-								height: 48,
-								gap: "8px",
-								borderRadius: "10px",
 								border: tab.id === "all" ? "none" : (activeTab === tab.id ? "1px solid rgba(255, 255, 255, 1)" : "1px solid rgba(255, 255, 255, 0.8)"),
-								paddingTop: "16px",
-								paddingRight: "32px",
-								paddingBottom: "16px",
-								paddingLeft: "32px",
 								background: tab.id === "all" ? "linear-gradient(180deg, #007AEB 0%, #82DEF5 100%)" : (activeTab === tab.id ? "rgba(46, 169, 255, 0.1)" : "transparent"),
-								display: "flex",
-								alignItems: "center",
-								justifyContent: "center",
-								cursor: "pointer",
-								transition: "all 0.3s ease",
-								whiteSpace: "nowrap",
-								overflow: "hidden",
-								textOverflow: "ellipsis",
+								fontFamily: "Commissioner",
+								fontWeight: 500,
+								color: tab.id === "all" ? "rgba(255, 255, 255, 1)" : "rgba(255, 255, 255, 0.8)",
 							}}
 						>
-							<span
-								style={{
-									fontFamily: "Commissioner",
-									fontWeight: 500,
-									fontSize: 13,
-									lineHeight: "100%",
-									textAlign: "center",
-									textTransform: "capitalize",
-									color: tab.id === "all" ? "rgba(255, 255, 255, 1)" : "rgba(255, 255, 255, 0.8)",
-									whiteSpace: "nowrap",
-									overflow: "hidden",
-									textOverflow: "ellipsis",
-								}}
-							>
-								{tab.label}
-							</span>
+							{tab.label}
 						</button>
 					))}
 				</div>

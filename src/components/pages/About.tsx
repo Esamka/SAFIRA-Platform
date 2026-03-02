@@ -11,44 +11,39 @@ export default function About() {
 
 	return (
 		<main className="relative w-full min-h-screen overflow-x-hidden bg-black text-white">
-			<section className="relative w-full" style={{ height: 463.22 }}>
+			<section className="relative w-full h-[350px] sm:h-[400px] md:h-[463px]">
 				<Image
 					src="/bckgrnd%201.png"
 					alt="Top Background"
 					width={1440}
 					height={399}
-					className="absolute top-0 left-0 w-full z-10 object-cover"
-					style={{
-						height: 399,
-					}}
+					className="absolute top-0 left-0 w-full h-full z-10 object-cover"
 					priority
 				/>
 
-				<div
-					className="absolute text-white font-bold text-[36px] leading-tight whitespace-nowrap z-20"
-					style={{
-						[isRTL ? "right" : "left"]: "122px",
-						top: "184px",
-						fontFamily: "Orbitron",
-						fontWeight: 700,
-					}}
-				>
-					{t("about.page_title")}
-				</div>
+				<div className="absolute inset-0 z-20 flex flex-col justify-center px-6 sm:px-10 md:px-16 lg:px-[122px] pt-16 sm:pt-20">
+					<h1
+						className="text-white font-bold text-2xl sm:text-3xl md:text-[36px] leading-tight"
+						style={{
+							fontFamily: "Orbitron",
+							fontWeight: 700,
+						}}
+						dir={isRTL ? "rtl" : "ltr"}
+					>
+						{t("about.page_title")}
+					</h1>
 
-				<div
-					className="absolute text-white/80 text-xl leading-8 z-20"
-					style={{
-						[isRTL ? "right" : "left"]: "122px",
-						top: "249px",
-						width: "min(901.75px, calc(100vw - 244px))",
-						fontFamily: "Commissioner",
-						fontWeight: 400,
-						direction: isRTL ? "rtl" : "ltr",
-						textAlign: isRTL ? "right" : "left",
-					}}
-				>
-					{t("about.page_description_line1")} <br /> {t("about.page_description_line2")}
+					<p
+						className="text-white/80 text-base sm:text-lg md:text-xl leading-7 md:leading-8 mt-4 max-w-[901px]"
+						style={{
+							fontFamily: "Commissioner",
+							fontWeight: 400,
+							direction: isRTL ? "rtl" : "ltr",
+							textAlign: isRTL ? "right" : "left",
+						}}
+					>
+						{t("about.page_description_line1")} <br className="hidden sm:block" /> {t("about.page_description_line2")}
+					</p>
 				</div>
 
 				<div
@@ -65,15 +60,11 @@ export default function About() {
 				/>
 			</section>
 
-			<section className="relative mx-auto max-w-[1193.59px] px-6 pb-28">
-				<div className="flex flex-col lg:flex-row items-start gap-[120px]">
+			<section className="relative mx-auto max-w-[1193.59px] px-4 sm:px-6 pb-16 md:pb-28">
+				<div className="flex flex-col lg:flex-row items-center lg:items-start gap-10 lg:gap-[120px]">
 					<div className="shrink-0 flex items-start justify-center">
 						<div
-							className="relative"
-							style={{
-								width: 311.64471435546875,
-								height: 273.3895263671875,
-							}}
+							className="relative w-[200px] h-[175px] sm:w-[250px] sm:h-[220px] md:w-[312px] md:h-[273px]"
 						>
 							<Image src="/Group 1707480382.png" alt="Group" fill className="object-contain" priority />
 						</div>
@@ -190,7 +181,7 @@ export default function About() {
 						</div>
 					</div>
 
-					<div className="relative shrink-0 mt-10 lg:mt-0" style={{ width: 420, height: 288.1206359863281 }}>
+					<div className="relative shrink-0 mt-10 lg:mt-0 w-full sm:w-[300px] md:w-[350px] lg:w-[420px] aspect-[420/288]">
 						<div
 							className="pointer-events-none absolute rounded-full"
 							style={{
@@ -210,15 +201,15 @@ export default function About() {
 				</div>
 			</section>
 
-			<section className="relative mx-auto max-w-[1193.59px] px-6 pb-28">
-				<div className="mx-auto flex flex-col items-center" style={{ minHeight: 478, gap: 48 }} dir={isRTL ? "rtl" : "ltr"}>
+			<section className="relative mx-auto max-w-[1193.59px] px-4 sm:px-6 pb-16 md:pb-28">
+				<div className="mx-auto flex flex-col items-center gap-8 md:gap-12" dir={isRTL ? "rtl" : "ltr"}>
 					<div className="text-center">
 						<h2
+							className="text-2xl sm:text-3xl md:text-4xl"
 							style={{
 								fontFamily: "Orbitron",
 								fontWeight: 500,
-								fontSize: 36,
-								lineHeight: "56px",
+								lineHeight: "1.4",
 								textTransform: "capitalize",
 								color: "rgba(255, 255, 255, 1)",
 							}}
@@ -226,7 +217,7 @@ export default function About() {
 							{t("about.why_choose_title")}
 						</h2>
 						<p
-							className="mt-4"
+							className="mt-4 text-sm sm:text-base md:text-lg"
 							style={{
 								fontFamily: "Commissioner",
 								fontWeight: 500,
@@ -240,14 +231,12 @@ export default function About() {
 						</p>
 					</div>
 
-					<div className="flex flex-col lg:flex-row justify-between w-full" style={{ gap: 24 }}>
+					<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full">
 						{(["card1_title", "card2_title", "card3_title", "card4_title"] as const).map((k) => (
 							<div
 								key={k}
-								className="relative overflow-hidden rounded-[10px]"
+								className="relative overflow-hidden rounded-[10px] w-full min-h-[246px]"
 								style={{
-									width: 285,
-									height: 246,
 									background: "rgba(0, 10, 19, 1)",
 								}}
 								dir={isRTL ? "rtl" : "ltr"}

@@ -98,10 +98,10 @@ export default function WhyChooseCards({
 					)}
 					{title && (
 						<h2
-							className="font-medium text-4xl capitalize text-white"
+							className="font-medium text-2xl sm:text-3xl md:text-4xl capitalize text-white"
 							style={{
 								fontFamily: "Orbitron",
-								lineHeight: "56px",
+								lineHeight: "1.4",
 								textAlign: "center",
 							}}
 						>
@@ -111,18 +111,16 @@ export default function WhyChooseCards({
 				</div>
 			)}
 
-			{/* Cards grid — 3 per row, space-between */}
+			{/* Cards grid — responsive */}
 			<div
-				className="flex flex-wrap justify-center w-full"
-				style={{ maxWidth: 1252, gap: "24px 20px" }}
+				className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 w-full"
+				style={{ maxWidth: 1252 }}
 			>
 				{cardKeys.map((k) => (
 					<div
 						key={k}
-						className="relative overflow-hidden rounded-[10px]"
+						className="relative overflow-hidden rounded-[10px] w-full min-h-[210px]"
 						style={{
-							width: 340,
-							height: 210,
 							background: "rgba(0, 10, 19, 1)",
 						}}
 						dir={isRTL ? "rtl" : "ltr"}

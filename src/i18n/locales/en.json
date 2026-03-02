@@ -20,7 +20,8 @@
     "resources": "Resources",
     "blog": "Features",
     "pricing": "Pricing",
-    "contact": "Contact"
+    "contact": "Contact",
+    "language": "Language"
   },
   "stats": {
     "processed": "High-volume conversations processed",

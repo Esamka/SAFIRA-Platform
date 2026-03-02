@@ -29,10 +29,9 @@ export default function CTASection({
     <div
       className="relative w-full max-w-4xl rounded-lg overflow-hidden flex items-center justify-center"
       style={{
-        minHeight: 376,
+        minHeight: 250,
         background: "rgba(255, 255, 255, 0.04)",
         border: "1px solid rgba(255, 255, 255, 0.2)",
-        aspectRatio: "1120 / 376",
       }}
     >
       {/* Background Image */}
@@ -64,16 +63,15 @@ export default function CTASection({
 
       {/* Content Container */}
       <div
-        className="relative z-20 flex flex-col items-center justify-center gap-6 px-8 py-12 max-w-4xl text-center"
+        className="relative z-20 flex flex-col items-center justify-center gap-4 sm:gap-6 px-4 sm:px-8 py-8 sm:py-12 max-w-4xl text-center"
       >
         {/* Title */}
         <h2
-          className="text-white font-semibold"
+          className="text-white font-semibold text-2xl sm:text-3xl md:text-4xl lg:text-[48px]"
           style={{
             fontFamily: "Orbitron",
             fontWeight: 400,
-            fontSize: "48px",
-            lineHeight: "100%",
+            lineHeight: "120%",
             letterSpacing: 0,
             maxWidth: 990,
           }}
@@ -83,12 +81,11 @@ export default function CTASection({
 
         {/* Subtitle */}
         <p
-          className="text-white opacity-80"
+          className="text-white opacity-80 text-sm sm:text-base md:text-lg lg:text-xl"
           style={{
             fontFamily: "Commissioner",
             fontWeight: 400,
-            fontSize: "20px",
-            lineHeight: "22.4px",
+            lineHeight: "1.4",
             letterSpacing: 0,
             maxWidth: 618,
           }}
@@ -97,7 +94,7 @@ export default function CTASection({
         </p>
 
         {/* Button */}
-        <div className="mt-4 flex gap-4 items-center justify-center" style={{ flexDirection: isRTL ? "row-reverse" : "row" }}>
+        <div className="mt-4 flex flex-col sm:flex-row gap-3 sm:gap-4 items-center justify-center" style={{ flexDirection: isRTL ? "row-reverse" : undefined }}>
           <CTAButton href={buttonHref}>
             {buttonText}
           </CTAButton>

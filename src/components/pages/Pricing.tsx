@@ -13,56 +13,36 @@ export default function Pricing() {
 
 	return (
 		<main className="relative w-full min-h-screen overflow-x-hidden bg-black text-white">
-			<section className="relative w-full" style={{ height: 463.22 }}>
+			<section className="relative w-full min-h-[300px] sm:min-h-[380px] md:min-h-[463px]">
 				<Image
 					src="/bckgrnd%201.png"
 					alt="Top Background"
-					width={1440}
-					height={399}
-					className="absolute top-0 left-0 w-full z-10 object-cover"
-					style={{
-						height: 399,
-					}}
+					fill
+					className="object-cover z-10"
 					priority
 				/>
 
 				<div
-					className="absolute font-bold z-20"
-					style={{
-						[isRTL ? "right" : "left"]: "122px",
-						top: "184px",
-						width: 464,
-						height: 45,
-						fontFamily: "Orbitron",
-						fontWeight: 700,
-						fontSize: 36,
-						lineHeight: "100%",
-						textTransform: "capitalize",
-						opacity: 1,
-					}}
+					className="relative z-20 flex flex-col justify-end px-6 sm:px-10 md:px-[122px] pt-32 sm:pt-40 md:pt-[184px] pb-10"
+					style={{ direction: isRTL ? "rtl" : "ltr" }}
 				>
-					{t("pricing.page_title")}
-				</div>
+					<h1
+						className="font-bold text-2xl sm:text-3xl md:text-4xl capitalize"
+						style={{ fontFamily: "Orbitron" }}
+					>
+						{t("pricing.page_title")}
+					</h1>
 
-				<div
-					className="absolute z-20"
-					style={{
-						[isRTL ? "right" : "left"]: "122px",
-						top: "249px",
-						width: 901.75,
-						height: 64,
-						fontFamily: "Commissioner",
-						fontWeight: 400,
-						fontSize: 20,
-						lineHeight: "32px",
-						textTransform: "capitalize",
-						color: "rgba(255, 255, 255, 0.8)",
-						opacity: 1,
-						direction: isRTL ? "rtl" : "ltr",
-						textAlign: isRTL ? "right" : "left",
-					}}
-				>
-					{t("pricing.page_description")}
+					<p
+						className="mt-4 max-w-[900px] text-base sm:text-lg md:text-xl capitalize"
+						style={{
+							fontFamily: "Commissioner",
+							lineHeight: "32px",
+							color: "rgba(255, 255, 255, 0.8)",
+						}}
+					>
+						{t("pricing.page_description")}
+					</p>
 				</div>
 
 				<div
@@ -80,19 +60,15 @@ export default function Pricing() {
 			</section>
 
 			<section className="relative mx-auto max-w-[1193.59px] px-6 pb-8 text-white">
-				<div
+				<h2
+					className="text-2xl sm:text-3xl md:text-4xl text-center capitalize mb-10 md:mb-12"
 					style={{
 						fontFamily: "Orbitron",
 						fontWeight: 500,
-						fontSize: 36,
-						lineHeight: "100%",
-						textAlign: "center",
-						textTransform: "capitalize",
-						marginBottom: 48,
 					}}
 				>
 					{t("plans2.flexible_title")}
-				</div>
+				</h2>
 				<PricingPlans showTitle={false} isRTL={isRTL} />
 			</section>
 

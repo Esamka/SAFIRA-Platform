@@ -127,7 +127,7 @@ import { Dropdown } from "@/components/ui/dropdown";
             </Link>
 
             {/* Language Dropdown */}
-            <div className="hidden md:block relative">
+            <div className="hidden lg:block relative">
               <Dropdown open={open} onToggle={() => setOpen((v) => !v)}>
                 <button
                   className="block w-full text-start px-4 py-2 rounded-md transition-colors hover:bg-blue-500/20 focus:bg-blue-500/30 text-sm"
@@ -161,74 +161,126 @@ import { Dropdown } from "@/components/ui/dropdown";
 
             {/* Mobile Menu Button */}
             <button
-              className="md:hidden lg:hidden p-2 rounded-md hover:bg-white/10 transition-colors"
+              className="lg:hidden p-2 rounded-md hover:bg-white/10 transition-colors"
               onClick={() => setMobileOpen(!mobileOpen)}
               aria-label="Toggle menu"
             >
-              {mobileOpen ? (
-                /* X Icon */
-                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                </svg>
-              ) : (
-                /* Menu Icon */
-                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-              )}
+              <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
             </button>
           </div>
         </nav>
 
-        {/* Mobile Menu */}
-        {mobileOpen && (
-          <div className="md:hidden lg:hidden mt-4 pb-4">
-            <ul className="flex flex-col gap-3">
-              {items.map((item) => (
-                <li key={item.label}>
-                  <Link
-                    href={item.href}
-                    className={`block px-4 py-2 rounded-md transition-colors ${pathname === item.href ? "text-white bg-blue-500/20" : "text-white/70"}`}
-                    onClick={() => setMobileOpen(false)}
-                  >
-                    {item.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-            
-            {/* Mobile Language Selector */}
-            <div className="mt-4 pt-4 border-t border-white/10 flex flex-col gap-2">
+      </div>
+
+      {/* Mobile Menu Overlay */}
+      {mobileOpen && (
+        <div
+          className="lg:hidden fixed inset-0 top-0 z-40 bg-black/60 backdrop-blur-sm"
+          onClick={() => setMobileOpen(false)}
+        />
+      )}
+
+      {/* Mobile Menu Panel */}
+      <div
+        className={`lg:hidden fixed top-0 ${isRTL ? "left-0" : "right-0"} z-50 h-full w-[280px] sm:w-[320px] transform transition-transform duration-300 ease-in-out ${
+          mobileOpen
+            ? "translate-x-0"
+            : isRTL
+            ? "-translate-x-full"
+            : "translate-x-full"
+        }`}
+        style={{
+          background: "linear-gradient(180deg, rgba(10, 15, 30, 0.98) 0%, rgba(5, 10, 20, 0.99) 100%)",
+          borderLeft: isRTL ? "none" : "1px solid rgba(255, 255, 255, 0.08)",
+          borderRight: isRTL ? "1px solid rgba(255, 255, 255, 0.08)" : "none",
+          boxShadow: "-4px 0 30px rgba(0, 0, 0, 0.5)",
+        }}
+      >
+        {/* Close Button */}
+        <div className="flex items-center justify-between px-6 pt-7 pb-4">
+          <span
+            style={{
+              fontFamily: "Orbitron",
+              fontWeight: 800,
+              fontSize: 20,
+              color: "#ffffff",
+              textTransform: "uppercase",
+            }}
+          >
+            SAFIRA
+          </span>
+          <button
+            className="p-2 rounded-lg hover:bg-white/10 transition-colors"
+            onClick={() => setMobileOpen(false)}
+            aria-label="Close menu"
+          >
+            <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+
+        {/* Divider */}
+        <div className="mx-6 h-px bg-gradient-to-r from-transparent via-blue-500/30 to-transparent" />
+
+        {/* Nav Links */}
+        <nav className="px-4 py-6">
+          <ul className="flex flex-col gap-1">
+            {items.map((item) => (
+              <li key={item.label}>
+                <Link
+                  href={item.href}
+                  className={`block px-4 py-3 rounded-xl text-[15px] font-medium transition-all duration-200 ${
+                    pathname === item.href
+                      ? "text-white bg-gradient-to-r from-blue-500/20 to-cyan-500/10 border border-blue-500/20"
+                      : "text-white/70 hover:text-white hover:bg-white/5"
+                  }`}
+                  onClick={() => setMobileOpen(false)}
+                  style={{ fontFamily: "Commissioner" }}
+                >
+                  {item.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+
+        {/* Divider */}
+        <div className="mx-6 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
+
+        {/* Language Selector */}
+        <div className="px-4 py-5">
+          <p className="px-4 text-xs text-white/40 uppercase tracking-wider mb-3" style={{ fontFamily: "Commissioner" }}>
+            {t("nav.language") || "Language"}
+          </p>
+          <div className="flex gap-2 px-2">
+            {[
+              { code: "ar", label: "عربي" },
+              { code: "en", label: "EN" },
+              { code: "fr", label: "FR" },
+            ].map((lang) => (
               <button
-                className="w-full text-start px-4 py-2 rounded-md transition-colors hover:bg-blue-500/20 text-sm"
+                key={lang.code}
+                className={`flex-1 py-2.5 rounded-lg text-sm font-medium transition-all duration-200 ${
+                  i18n.language === lang.code
+                    ? "text-white bg-gradient-to-b from-blue-500/30 to-blue-600/20 border border-blue-500/30"
+                    : "text-white/60 hover:text-white hover:bg-white/5 border border-white/10"
+                }`}
                 onClick={() => {
-                  i18n.changeLanguage("ar");
+                  i18n.changeLanguage(lang.code);
                   setMobileOpen(false);
                 }}
+                style={{ fontFamily: "Commissioner" }}
               >
-                عربي
+                {lang.label}
               </button>
-              <button
-                className="w-full text-start px-4 py-2 rounded-md transition-colors hover:bg-blue-500/20 text-sm"
-                onClick={() => {
-                  i18n.changeLanguage("en");
-                  setMobileOpen(false);
-                }}
-              >
-                English
-              </button>
-              <button
-                className="w-full text-start px-4 py-2 rounded-md transition-colors hover:bg-blue-500/20 text-sm"
-                onClick={() => {
-                  i18n.changeLanguage("fr");
-                  setMobileOpen(false);
-                }}
-              >
-                Français
-              </button>
-            </div>
+            ))}
           </div>
-        )}
+        </div>
+
+
       </div>
     </header>
    );

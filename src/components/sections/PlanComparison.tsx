@@ -26,11 +26,10 @@ export default function PlanComparison({ isRTL }: PlanComparisonProps) {
 		<div className="w-full py-16">
 			{/* Title */}
 			<div
-				className="text-white text-center mb-6"
+				className="text-white text-center mb-6 text-xl sm:text-2xl md:text-[28px]"
 				style={{
 					fontFamily: "Orbitron",
 					fontWeight: 500,
-					fontSize: 28,
 					lineHeight: "100%",
 					textTransform: "capitalize",
 				}}
@@ -40,7 +39,7 @@ export default function PlanComparison({ isRTL }: PlanComparisonProps) {
 
 			{/* Table Container with gradient border and shadow */}
 			<div
-				className="w-full mx-auto rounded-lg overflow-hidden relative"
+				className="w-full mx-auto rounded-lg overflow-x-auto relative"
 				style={{
 					maxWidth: 1252,
 					borderRadius: 10,
@@ -55,6 +54,7 @@ export default function PlanComparison({ isRTL }: PlanComparisonProps) {
 					style={{
 						fontFamily: "Commissioner",
 						tableLayout: "fixed",
+						minWidth: 700,
 					}}
 					dir={rtl ? "rtl" : "ltr"}
 				>
@@ -167,8 +167,8 @@ export default function PlanComparison({ isRTL }: PlanComparisonProps) {
 
 			{/* Notes Section */}
 			<div
+				className="w-full px-4 sm:px-0"
 				style={{
-					width: "100%",
 					maxWidth: 1252,
 					margin: "48px auto 0",
 					display: "flex",
@@ -177,10 +177,10 @@ export default function PlanComparison({ isRTL }: PlanComparisonProps) {
 				}}
 			>
 				<div
+					className="text-lg sm:text-xl md:text-2xl"
 					style={{
 						fontFamily: "Commissioner",
 						fontWeight: 700,
-						fontSize: 24,
 						lineHeight: "100%",
 						textTransform: "capitalize",
 						color: "rgba(255, 255, 255, 1)",
@@ -190,11 +190,11 @@ export default function PlanComparison({ isRTL }: PlanComparisonProps) {
 				</div>
 
 				<ul
+					className="text-sm sm:text-base md:text-lg"
 					style={{
 						fontFamily: "Commissioner",
 						fontWeight: 400,
-						fontSize: 18,
-						lineHeight: "32px",
+						lineHeight: "28px",
 						letterSpacing: "0%",
 						color: "rgba(255, 255, 255, 1)",
 						margin: 0,

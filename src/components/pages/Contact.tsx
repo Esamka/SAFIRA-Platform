@@ -10,48 +10,39 @@ export default function Contact() {
 
 	return (
 		<main className="relative w-full min-h-screen overflow-x-hidden bg-black text-white">
-			<section className="relative w-full" style={{ height: 463.22 }}>
+			<section className="relative w-full h-[350px] sm:h-[400px] md:h-[463px]">
 				<Image
 					src="/bckgrnd%201.png"
 					alt="Top Background"
 					width={1440}
 					height={399}
-					className="absolute top-0 left-0 w-full z-10 object-cover"
-					style={{
-						height: 399,
-					}}
+					className="absolute top-0 left-0 w-full h-full z-10 object-cover"
 					priority
 				/>
 
-				<div
-					className={`absolute z-20 font-bold capitalize text-white ${isRTL ? "right-[122px]" : "left-[122px]"}`}
-					style={{
-						top: "184px",
-						width: 225,
-						height: 45,
-						fontFamily: "Orbitron",
-						fontSize: 36,
-						lineHeight: "100%",
-					}}
-				>
-					{t("contact.page_title")}
-				</div>
+				<div className="absolute inset-0 z-20 flex flex-col justify-center px-6 sm:px-10 md:px-16 lg:px-[122px] pt-16 sm:pt-20">
+					<h1
+						className="font-bold capitalize text-white text-2xl sm:text-3xl md:text-[36px]"
+						style={{
+							fontFamily: "Orbitron",
+							lineHeight: "100%",
+						}}
+						dir={isRTL ? "rtl" : "ltr"}
+					>
+						{t("contact.page_title")}
+					</h1>
 
-				<div
-					className={`absolute z-20 capitalize text-white/80 ${isRTL ? "right-[122px]" : "left-[122px]"}`}
-					style={{
-						top: "249px",
-						width: 901.75,
-						height: 64,
-						fontFamily: "Commissioner",
-						fontSize: 20,
-						lineHeight: "32px",
-						direction: isRTL ? "rtl" : "ltr",
-						textAlign: isRTL ? "right" : "left",
-						whiteSpace: "pre-wrap",
-					}}
-				>
-					{t("contact.page_description")}
+					<p
+						className="capitalize text-white/80 text-base sm:text-lg md:text-xl mt-4 max-w-[901px]"
+						style={{
+							fontFamily: "Commissioner",
+							lineHeight: "1.6",
+							direction: isRTL ? "rtl" : "ltr",
+							textAlign: isRTL ? "right" : "left",
+						}}
+					>
+						{t("contact.page_description")}
+					</p>
 				</div>
 
 				<div
@@ -69,23 +60,13 @@ export default function Contact() {
 			</section>
 
 			<section
-				className="relative flex gap-14 justify-center flex-row-reverse"
-				style={{
-					marginTop: "50px",
-					marginBottom: "200px",
-					marginLeft: "124px",
-					marginRight: "124px",
-					width: 1188,
-					height: 613.9921875,
-				}}
+				className="relative flex flex-col-reverse lg:flex-row gap-8 lg:gap-14 justify-center mx-auto max-w-[1188px] px-4 sm:px-6 md:px-8 lg:px-[124px] py-12 md:py-16 mb-12 md:mb-24"
 				dir={isRTL ? "rtl" : "ltr"}
 			>
 				{/* Video Section */}
 				<div
-					className="relative flex items-center justify-center rounded-[10px] overflow-hidden"
+					className="relative flex items-center justify-center rounded-[10px] overflow-hidden w-full lg:w-1/2 aspect-[566/610]"
 					style={{
-						width: 566,
-						height: 610,
 						background: "rgba(0, 10, 19, 1)",
 						border: "1px solid",
 						borderImage: "linear-gradient(270deg, rgba(0, 72, 139, 0) 5.77%, #007AEB 43.27%, #007AEB 66.35%, rgba(37, 37, 37, 0) 100%) 1",
@@ -112,25 +93,14 @@ export default function Contact() {
 				</div>
 
 				{/* Form Section */}
-				<div
-					className="flex flex-col"
-					style={{
-						width: 566,
-						height: 613.9921875,
-						gap: 562,
-					}}
-				>
+				<div className="flex flex-col w-full lg:w-1/2">
 					<form className="flex flex-col gap-6">
 						{/* Name Field */}
 						<div className="flex flex-col gap-2">
 							<label
-								className="text-white/80 font-medium"
+								className="text-white/80 font-medium text-sm sm:text-base"
 								style={{
-									width: 532,
-									height: 20,
 									fontFamily: "Commissioner",
-									fontSize: 16,
-									lineHeight: "100%",
 									letterSpacing: "-0.3px",
 								}}
 							>
@@ -138,12 +108,8 @@ export default function Contact() {
 							</label>
 							<Input
 								type="text"
-								className="bg-[rgba(0,10,19,1)] border border-[rgba(0,122,235,0.4)] text-white placeholder-transparent"
+								className="w-full h-14 bg-[rgba(0,10,19,1)] border border-[rgba(0,122,235,0.4)] text-white placeholder-transparent rounded-lg px-4"
 								style={{
-									width: 532,
-									height: 56,
-									borderRadius: 8,
-									padding: "0 16px",
 									fontFamily: "Commissioner",
 									fontSize: 16,
 								}}
@@ -153,13 +119,9 @@ export default function Contact() {
 						{/* Email Field */}
 						<div className="flex flex-col gap-2">
 							<label
-								className="text-white/80 font-medium"
+								className="text-white/80 font-medium text-sm sm:text-base"
 								style={{
-									width: 532,
-									height: 20,
 									fontFamily: "Commissioner",
-									fontSize: 16,
-									lineHeight: "100%",
 									letterSpacing: "-0.3px",
 								}}
 							>
@@ -167,12 +129,8 @@ export default function Contact() {
 							</label>
 							<Input
 								type="email"
-								className="bg-[rgba(0,10,19,1)] border border-[rgba(0,122,235,0.4)] text-white placeholder-transparent"
+								className="w-full h-14 bg-[rgba(0,10,19,1)] border border-[rgba(0,122,235,0.4)] text-white placeholder-transparent rounded-lg px-4"
 								style={{
-									width: 532,
-									height: 56,
-									borderRadius: 8,
-									padding: "0 16px",
 									fontFamily: "Commissioner",
 									fontSize: 16,
 								}}
@@ -182,13 +140,9 @@ export default function Contact() {
 						{/* Phone Field */}
 						<div className="flex flex-col gap-2">
 							<label
-								className="text-white/80 font-medium"
+								className="text-white/80 font-medium text-sm sm:text-base"
 								style={{
-									width: 532,
-									height: 20,
 									fontFamily: "Commissioner",
-									fontSize: 16,
-									lineHeight: "100%",
 									letterSpacing: "-0.3px",
 								}}
 							>
@@ -196,12 +150,8 @@ export default function Contact() {
 							</label>
 							<Input
 								type="tel"
-								className="bg-[rgba(0,10,19,1)] border border-[rgba(0,122,235,0.4)] text-white placeholder-transparent"
+								className="w-full h-14 bg-[rgba(0,10,19,1)] border border-[rgba(0,122,235,0.4)] text-white placeholder-transparent rounded-lg px-4"
 								style={{
-									width: 532,
-									height: 56,
-									borderRadius: 8,
-									padding: "0 16px",
 									fontFamily: "Commissioner",
 									fontSize: 16,
 								}}
@@ -209,31 +159,22 @@ export default function Contact() {
 						</div>
 
 						{/* Message Field */}
-						<div className="flex flex-col gap-2" style={{ marginBottom: 48 }}>
+						<div className="flex flex-col gap-2 mb-6 sm:mb-8">
 							<label
-								className="text-white/80 font-medium"
+								className="text-white/80 font-medium text-sm sm:text-base"
 								style={{
-									width: 532,
-									height: 20,
 									fontFamily: "Commissioner",
-									fontSize: 16,
-									lineHeight: "100%",
 									letterSpacing: "-0.3px",
 								}}
 							>
 								{t("contact.form_message")}
 							</label>
 							<textarea
-								className="bg-[rgba(0,10,19,1)] border border-[rgba(0,122,235,0.4)] text-white placeholder-transparent resize-none"
+								className="w-full bg-[rgba(0,10,19,1)] border border-[rgba(0,122,235,0.4)] text-white placeholder-transparent resize-none rounded-lg px-4 py-3"
 								style={{
-									width: 532,
-									height: 117.9921875,
-									borderRadius: 8,
-									padding: "0 16px",
+									minHeight: 118,
 									fontFamily: "Commissioner",
 									fontSize: 16,
-									paddingTop: "12px",
-									paddingBottom: "12px",
 								}}
 							/>
 						</div>
@@ -241,10 +182,8 @@ export default function Contact() {
 						{/* Submit Button */}
 						<button
 							type="submit"
-							className="flex items-center justify-center gap-2 text-white font-medium hover:opacity-90 transition rounded-[10px]"
+							className="w-full h-14 flex items-center justify-center gap-2 text-white font-medium hover:opacity-90 transition rounded-[10px]"
 							style={{
-								width: 566,
-								height: 56,
 								background: "linear-gradient(90.08deg, #007AEB 0.08%, #82DEF5 99.94%)",
 								fontFamily: "Commissioner",
 								fontSize: 18,

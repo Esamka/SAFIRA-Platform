@@ -45,134 +45,59 @@ export default function Home() {
 
 	return (
 		<main className="relative w-full min-h-screen overflow-x-hidden bg-black text-white">
-			<section className="relative w-full" style={{ height: 631 }}>
+			<section className="relative w-full h-[400px] sm:h-[500px] md:h-[580px] lg:h-[631px]">
 				<Image
 					src="/bckgrnd%201.png"
 					alt="Top Background"
 					width={1440}
 					height={631}
-					className="absolute w-full z-10 object-cover"
-					style={{
-						height: 631,
-						top: 0.5,
-						left: -0.33,
-						opacity: 1,
-					}}
+					className="absolute inset-0 w-full h-full z-10 object-cover"
 					priority
 				/>
 
 				{/* Hero Content - positioned above image */}
-				<div className="absolute inset-0 flex items-center justify-center z-20 pt-0">
+				<div className="absolute inset-0 flex items-center justify-center z-20 px-4 sm:px-6">
 					<div 
-						className="rounded-lg bg-transparent text-center flex flex-col items-center"
-						style={{
-							width: 1018.23828125,
-							height: 324.01300048828125,
-							opacity: 1,
-							gap: 56,
-							display: "flex",
-							flexDirection: "column",
-							alignItems: "center",
-							justifyContent: "center",
-						}}
+						className="rounded-lg bg-transparent text-center flex flex-col items-center justify-center gap-6 sm:gap-8 md:gap-10 lg:gap-14 w-full max-w-[1018px]"
 					>
 						<h1
+							className="text-2xl sm:text-3xl md:text-4xl lg:text-[45px] text-center font-bold"
 							style={{
-								width: 1018.23828125,
-								height: 122.01300048828125,
-								opacity: 1,
 								fontFamily: "IBM Plex Sans Arabic",
-								fontWeight: 700,
-								fontSize: 45,
-								lineHeight: "64px",
-								letterSpacing: 0,
-								textAlign: "center",
-								margin: 0,
-								display: "block",
+								lineHeight: "1.4",
 								color: "rgba(255, 255, 255, 1)",
 							}}
-							className="text-center"
 						>
 							{t("home.title_line1")}
 							<br />
 							{t("home.title_line2")}
 						</h1>
 						<p
+							className="text-sm sm:text-base md:text-lg lg:text-xl text-center max-w-[658px] -mt-2"
 							style={{
-								width: 658.5,
-								height: 64,
-								opacity: 1,
 								fontFamily: "IBM Plex Sans Arabic",
 								fontWeight: 400,
-								fontSize: 20,
-								lineHeight: "32px",
-								letterSpacing: 0,
-								textAlign: "center",
+								lineHeight: "1.6",
 								textTransform: "capitalize",
-								margin: 0,
-								marginTop: "-16px",
-								display: "block",
 								color: "rgba(255, 255, 255, 0.8)",
 							}}
-							className="text-center"
 						>
 							{t("home.subtitle")}
 						</p>
 
 						{/* CTA Buttons */}
-						<div 
-							className="flex justify-center items-center flex-wrap"
-							style={{
-								width: 395,
-								height: 50,
-								opacity: 1,
-								gap: 40,
-								display: "flex",
-								justifyContent: "center",
-								alignItems: "center",
-							}}
-						>
+						<div className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6 md:gap-10">
 							<CTAButton href="/contact">{t("home.cta_start")}</CTAButton>
 							<Link href="/contact">
 								<button
+									className="h-[50px] px-6 sm:px-8 rounded-[10px] border border-white/20 bg-transparent text-white flex items-center justify-center cursor-pointer hover:text-[#82DEF5] hover:border-[#82DEF5]/40 hover:bg-white/[0.04] hover:scale-[1.015] active:scale-[0.97] transition-all duration-300 ease-out"
 									style={{
-										width: 151,
-										height: 50,
-										borderRadius: 10,
-										padding: "15px 35px",
-										border: "1px solid rgba(252, 252, 252, 0.23)",
-										background: "transparent",
-										color: "white",
-										opacity: 1,
-										display: "flex",
-										alignItems: "center",
-										justifyContent: "center",
-										transition: "all 0.3s ease",
 										fontFamily: "IBM Plex Sans Arabic",
 										fontWeight: 400,
 										fontSize: 16,
-										lineHeight: "19.2px",
-										letterSpacing: 0,
-										cursor: "pointer",
 									}}
-									className="hover:text-[#82DEF5] hover:border-[#82DEF5]/40 hover:bg-white/[0.04] hover:scale-[1.015] active:scale-[0.97] transition-all duration-300 ease-out"
 								>
-									<span
-										style={{
-											width: 81,
-											height: 20,
-											opacity: 1,
-											fontFamily: "IBM Plex Sans Arabic",
-											fontWeight: 400,
-											fontSize: 16,
-											lineHeight: "19.2px",
-											letterSpacing: 0,
-											verticalAlign: "middle",
-											color: "rgba(255, 255, 255, 1)",
-										}}
-									>
-										{t("home.cta_contact")}
-									</span>
+									{t("home.cta_contact")}
 								</button>
 							</Link>
 						</div>
@@ -285,7 +210,7 @@ export default function Home() {
 					</div>
 
 					{/* Image Section with glow */}
-					<div className="relative shrink-0 mt-10 lg:mt-0" style={{ width: 420, height: 370 }}>
+					<div className="relative shrink-0 mt-10 lg:mt-0 w-full sm:w-[300px] md:w-[350px] lg:w-[420px] aspect-[420/370]">
 						<div
 							className="pointer-events-none absolute rounded-full"
 							style={{
@@ -449,7 +374,7 @@ export default function Home() {
 			</section>
 
 			{/* ====== Use Cases Section ====== */}
-			<section className="relative mx-auto max-w-[1193px] px-6 pb-28 text-white overflow-visible">
+			<section className="relative mx-auto max-w-[1193px] px-4 sm:px-6 pb-16 md:pb-28 text-white overflow-visible">
 				<GlowEffect
 					size={450}
 					top="30%"
@@ -458,21 +383,21 @@ export default function Home() {
 					color="#007AFF30"
 					zIndex={0}
 				/>
-				<div className={`flex items-center justify-between rounded-[10px] ${isRTL ? "flex-row-reverse" : ""}`} style={{ height: "363.91px" }}>
-					<div className="shrink-0 relative rounded-[10px] overflow-hidden">
+				<div className={`flex flex-col lg:flex-row items-center justify-between rounded-[10px] gap-8 lg:gap-0 ${isRTL ? "lg:flex-row-reverse" : ""}`}>
+					<div className="shrink-0 relative rounded-[10px] overflow-hidden w-full lg:w-auto">
 						<Image
 							src="/chatbot-hologram-social-network-icons-ai-communication 1.png"
 							alt="Chatbot Hologram"
 							width={536}
 							height={364}
 							priority
-							className="block"
+							className="block w-full lg:w-[536px] h-auto"
 						/>
 						<div className="absolute inset-0" style={{ backgroundColor: "#0b274955", mixBlendMode: "plus-lighter" }} />
 					</div>
-					<div className={`flex-1 ps-8 ${isRTL ? "text-right" : "text-left"}`}>
+					<div className={`flex-1 ps-0 lg:ps-8 ${isRTL ? "text-right" : "text-left"}`}>
 						<div className="text-white/70">{t("usecases.title_small")}</div>
-						<h3 className="mt-3 text-3xl sm:text-4xl font-extrabold">{t("usecases.title")}</h3>
+						<h3 className="mt-3 text-2xl sm:text-3xl md:text-4xl font-extrabold">{t("usecases.title")}</h3>
 						<div className="mt-6 space-y-5">
 							<div className="flex items-start gap-4">
 								<Image src="/file.svg" alt="" width={32} height={32} />
@@ -569,10 +494,8 @@ export default function Home() {
 					].map((card, i) => (
 						<div
 							key={i}
-							className="relative overflow-hidden rounded-[10px]"
+							className="relative overflow-hidden rounded-[10px] w-full sm:w-[calc(50%-10px)] lg:w-[calc(25%-15px)] min-h-[210px]"
 							style={{
-								width: 285,
-								height: 210,
 								background: "rgba(0, 10, 19, 1)",
 							}}
 							dir={isRTL ? "rtl" : "ltr"}
@@ -699,15 +622,11 @@ export default function Home() {
 </section>
 
 			{/* ====== Support CTA Section (added) ====== */}
-			<section className="relative mx-auto max-w-[1252px] px-6 pb-28 text-white">
+			<section className="relative mx-auto max-w-[1252px] px-4 sm:px-6 pb-16 md:pb-28 text-white">
 				<div className="mx-auto" style={{ maxWidth: 1120 }}>
 					<div
-						className="rounded-[12px] mx-auto flex flex-col items-center justify-center text-center relative overflow-hidden"
+						className="rounded-[12px] mx-auto flex flex-col items-center justify-center text-center relative overflow-hidden px-4 sm:px-8 md:px-12 lg:px-[181px] py-10 sm:py-14"
 						style={{
-							paddingTop: 56,
-							paddingBottom: 56,
-							paddingLeft: 181,
-							paddingRight: 181,
 							backgroundImage: 'url("/Frame 1707480369.png")',
 							backgroundSize: "cover",
 							backgroundPosition: "center",
@@ -717,16 +636,16 @@ export default function Home() {
 						{/* dark overlay so text stays readable */}
 						<div className="absolute inset-0" style={{ backgroundColor: "rgba(11,30,54,0.55)" }} />
 
-						<div style={{ position: "relative", zIndex: 10, textAlign: "center" }}>
+						<div className="relative z-10 text-center">
 							<h3
+								className="text-2xl sm:text-3xl md:text-4xl lg:text-[48px]"
 								style={{
 									fontFamily: "IBM Plex Sans Arabic",
 									fontWeight: 500,
-									fontSize: 48,
 									lineHeight: "120%",
 									color: "rgba(255,255,255,1)",
 									margin: "0 auto",
-									maxWidth: 990.609375,
+									maxWidth: 990,
 									textAlign: "center",
 								}}
 							>
@@ -734,13 +653,12 @@ export default function Home() {
 							</h3>
 
 							<p
+								className="text-sm sm:text-base md:text-lg lg:text-xl mt-4 sm:mt-5"
 								style={{
 									fontFamily: "IBM Plex Sans Arabic",
 									fontWeight: 400,
-									fontSize: 20,
-									lineHeight: "22.4px",
+									lineHeight: "1.4",
 									color: "rgba(255,255,255,0.9)",
-									marginTop: 20,
 									maxWidth: 618,
 									margin: "20px auto 0",
 									textAlign: "center",
@@ -749,7 +667,7 @@ export default function Home() {
 								{t("support.subtitle")}
 							</p>
 
-							<div className="mt-8 flex justify-center">
+							<div className="mt-6 sm:mt-8 flex justify-center">
 								<CTAButton href="/contact">{t("support.cta")}</CTAButton>
 							</div>
 						</div>

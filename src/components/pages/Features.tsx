@@ -12,57 +12,41 @@ export default function Features() {
 
 	return (
 		<main className="relative w-full min-h-screen overflow-x-hidden bg-black text-white">
-			<section className="relative w-full" style={{ height: 463.22 }}>
+			<section className="relative w-full h-[350px] sm:h-[400px] md:h-[463px]">
 				<Image
 					src="/bckgrnd%201.png"
 					alt="Top Background"
 					width={1440}
 					height={399}
-					className="absolute top-0 left-0 w-full z-10 object-cover"
-					style={{
-						height: 399,
-					}}
+					className="absolute top-0 left-0 w-full h-full z-10 object-cover"
 					priority
 				/>
 
-				<div
-					className="absolute font-bold z-20"
-					style={{
-						[isRTL ? "right" : "left"]: "122px",
-						top: "184px",
-						width: 367,
-						height: 45,
-						fontFamily: "Orbitron",
-						fontWeight: 700,
-						fontSize: 36,
-						lineHeight: "100%",
-						textTransform: "capitalize",
-						color: "rgba(255, 255, 255, 1)",
-						opacity: 1,
-					}}
-				>
-					{t("features_page.page_title")}
-				</div>
+				<div className="absolute inset-0 z-20 flex flex-col justify-center px-6 sm:px-10 md:px-16 lg:px-[122px] pt-16 sm:pt-20">
+					<h1
+						className="font-bold text-2xl sm:text-3xl md:text-[36px] capitalize text-white"
+						style={{
+							fontFamily: "Orbitron",
+							fontWeight: 700,
+							lineHeight: "100%",
+						}}
+						dir={isRTL ? "rtl" : "ltr"}
+					>
+						{t("features_page.page_title")}
+					</h1>
 
-				<div
-					className="absolute z-20"
-					style={{
-						[isRTL ? "right" : "left"]: "122px",
-						top: "249px",
-						width: 901.75,
-						height: 32,
-						fontFamily: "Commissioner",
-						fontWeight: 400,
-						fontSize: 20,
-						lineHeight: "32px",
-						textTransform: "capitalize",
-						color: "rgba(255, 255, 255, 0.8)",
-						opacity: 1,
-						direction: isRTL ? "rtl" : "ltr",
-						textAlign: isRTL ? "right" : "left",
-					}}
-				>
-					{t("features_page.page_description")}
+					<p
+						className="text-base sm:text-lg md:text-xl text-white/80 mt-4 max-w-[901px] capitalize"
+						style={{
+							fontFamily: "Commissioner",
+							fontWeight: 400,
+							lineHeight: "1.6",
+							direction: isRTL ? "rtl" : "ltr",
+							textAlign: isRTL ? "right" : "left",
+						}}
+					>
+						{t("features_page.page_description")}
+					</p>
 				</div>
 
 				<div
@@ -79,7 +63,7 @@ export default function Features() {
 				/>
 			</section>
 
-		<section className="relative mx-auto px-6 py-28" style={{ width: 1193.5859375, maxWidth: "100%", marginTop: -100, [isRTL ? "marginRight" : "marginLeft"]: 60 }}>
+		<section className="relative mx-auto px-4 sm:px-6 py-16 md:py-28 max-w-[1194px]" style={{ marginTop: -50 }}>
 			{/* Glow in the middle of features grid */}
 			<GlowEffect
 				size={500}
@@ -89,17 +73,17 @@ export default function Features() {
 				transform="translateY(-50%)"
 				zIndex={0}
 			/>
-			<div className="flex flex-wrap justify-center" style={{ gap: 64 }} dir={isRTL ? "rtl" : "ltr"}>
+			<div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16" dir={isRTL ? "rtl" : "ltr"}>
 				{/* Feature 1 */}
-				<div className="rounded-lg p-5 flex flex-col gap-5" style={{ width: 529, height: 263 }}>
+				<div className="rounded-lg p-5 flex flex-col gap-5 w-full">
 					<Image
 						src="/ic.png"
 						alt={t("features_page.item1_title")}
 						width={70}
 						height={81}
 						style={{
-							width: 70.01695251464844,
-							height: 81,
+							
+							
 						}}
 					/>
 					<div>
@@ -149,15 +133,15 @@ export default function Features() {
 				</div>
 
 				{/* Feature 2 */}
-				<div className="rounded-lg p-5 flex flex-col gap-5" style={{ width: 529, height: 263 }}>
+				<div className="rounded-lg p-5 flex flex-col gap-5 w-full">
 					<Image
 						src="/ic.png"
 						alt={t("features_page.item2_title")}
 						width={70}
 						height={81}
 						style={{
-							width: 70.01695251464844,
-							height: 81,
+							
+							
 						}}
 					/>
 					<div>
@@ -207,15 +191,15 @@ export default function Features() {
 				</div>
 
 				{/* Feature 3 */}
-				<div className="rounded-lg p-5 flex flex-col gap-5" style={{ width: 529, height: 263 }}>
+				<div className="rounded-lg p-5 flex flex-col gap-5 w-full">
 					<Image
 						src="/ic.png"
 						alt={t("features_page.item3_title")}
 						width={70}
 						height={81}
 						style={{
-							width: 70.01695251464844,
-							height: 81,
+							
+							
 						}}
 					/>
 					<div>
@@ -265,15 +249,15 @@ export default function Features() {
 				</div>
 
 				{/* Feature 4 */}
-				<div className="rounded-lg p-5 flex flex-col gap-5" style={{ width: 529, height: 263 }}>
+				<div className="rounded-lg p-5 flex flex-col gap-5 w-full">
 					<Image
 						src="/ic.png"
 						alt={t("features_page.item4_title")}
 						width={70}
 						height={81}
 						style={{
-							width: 70.01695251464844,
-							height: 81,
+							
+							
 						}}
 					/>
 					<div>
@@ -323,15 +307,15 @@ export default function Features() {
 				</div>
 
 				{/* Feature 5 */}
-				<div className="rounded-lg p-5 flex flex-col gap-5" style={{ width: 529, height: 263 }}>
+				<div className="rounded-lg p-5 flex flex-col gap-5 w-full">
 					<Image
 						src="/ic.png"
 						alt={t("features_page.item5_title")}
 						width={70}
 						height={81}
 						style={{
-							width: 70.01695251464844,
-							height: 81,
+							
+							
 						}}
 					/>
 					<div>
@@ -381,15 +365,15 @@ export default function Features() {
 				</div>
 
 				{/* Feature 6 */}
-				<div className="rounded-lg p-5 flex flex-col gap-5" style={{ width: 529, height: 263 }}>
+				<div className="rounded-lg p-5 flex flex-col gap-5 w-full">
 					<Image
 						src="/ic.png"
 						alt={t("features_page.item6_title")}
 						width={70}
 						height={81}
 						style={{
-							width: 70.01695251464844,
-							height: 81,
+							
+							
 						}}
 					/>
 					<div>
@@ -439,15 +423,15 @@ export default function Features() {
 				</div>
 
 				{/* Feature 7 */}
-				<div className="rounded-lg p-5 flex flex-col gap-5" style={{ width: 529, height: 263 }}>
+				<div className="rounded-lg p-5 flex flex-col gap-5 w-full">
 					<Image
 						src="/ic.png"
 						alt={t("features_page.item7_title")}
 						width={70}
 						height={81}
 						style={{
-							width: 70.01695251464844,
-							height: 81,
+							
+							
 						}}
 					/>
 					<div>
@@ -499,15 +483,15 @@ export default function Features() {
 				</div>
 
 				{/* Feature 8 */}
-				<div className="rounded-lg p-5 flex flex-col gap-5" style={{ width: 529, height: 263 }}>
+				<div className="rounded-lg p-5 flex flex-col gap-5 w-full">
 					<Image
 						src="/ic.png"
 						alt={t("features_page.item8_title")}
 						width={70}
 						height={81}
 						style={{
-							width: 70.01695251464844,
-							height: 81,
+							
+							
 						}}
 					/>
 					<div>
