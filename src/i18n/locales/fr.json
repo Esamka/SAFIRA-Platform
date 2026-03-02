@@ -1,0 +1,451 @@
+{
+  "common": {
+    "buttons": {
+      "submit": "Envoyer",
+      "cancel": "Annuler",
+      "login": "Se connecter"
+    },
+    "welcome": "Bienvenue sur la plateforme SAFIRA"
+  },
+  "home": {
+    "title_line1": "Plateforme de support client propulsée par l'IA",
+    "title_line2": "pour les entreprises modernes",
+    "subtitle": "Offrez un service client plus rapide et efficace avec des agents de chat alimentés par l’IA, conçus pour les équipes en croissance et les grandes entreprises.",
+    "cta_start": "Commencer",
+    "cta_contact": "Contactez-nous"
+  },
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "resources": "Ressources",
+    "blog": "Fonctionnalités",
+    "pricing": "Tarifs",
+    "contact": "Contact"
+  },
+  "stats": {
+    "processed": "Grand volume de conversations traitées",
+    "agents": "Agents IA déployés",
+    "uptime": "Disponibilité et fiabilité de la plateforme",
+    "rating": "Note des clients"
+  },
+  "auth": {
+    "signin": {
+      "title": "Connexion",
+      "email": "Email",
+      "password": "Mot de passe",
+      "email_placeholder": "vous@exemple.com",
+      "password_placeholder": "••••••••",
+      "submit": "Se connecter"
+    }
+  },
+  "features": {
+    "title_small": "Pourquoi nous choisir ?",
+    "title": "Pourquoi les entreprises choisissent la plateforme SAFIRA ?",
+    "items": {
+      "scalable_title": "Évolutif pour la croissance",
+      "scalable_desc": "S’adapte en douceur à la croissance de votre équipe et au volume de clients, sans interruption.",
+      "secure_title": "Sécurisé et conforme",
+      "secure_desc": "Sécurité de niveau entreprise avec contrôle total des accès, protection des données et conformité.",
+      "platform_title": "Plateforme unifiée",
+      "platform_desc": "Gérez conversations, intégrations, connaissances et insights depuis un tableau de bord unique.",
+      "quick_title": "Configuration rapide et facile",
+      "quick_desc": "Lancez rapidement votre agent IA à partir de votre site ou de vos documents.",
+      "integration_title": "Intégration fluide",
+      "integration_desc": "Connectez-vous facilement aux CRM, canaux de messagerie et applications métier.",
+      "transparent_title": "Utilisation transparente",
+      "transparent_desc": "Visibilité claire de l’utilisation, des limites et de la flexibilité des plans en temps réel sur toutes les équipes."
+    }
+  },
+  "how": {
+    "title_small": "Comment ça marche ?",
+    "title": "Découvrez notre méthode simple et rapide",
+    "steps": {
+      "step1": "Étape 1",
+      "step2": "Étape 2",
+      "step3": "Étape 3",
+      "step4": "Étape 4"
+    },
+    "items": {
+      "knowledge_title": "Relier la connaissance",
+      "knowledge_desc": "Importez la FAQ, des documents ou le contenu du site pour comprendre votre activité.",
+      "agent_title": "Configurer l’agent",
+      "agent_desc": "Personnalisez le ton, les règles et le comportement pour correspondre à votre marque.",
+      "test_title": "Tester et améliorer",
+      "test_desc": "Passez en revue les conversations, testez les réponses et affinez les performances avant le lancement.",
+      "launch_title": "Lancer !",
+      "launch_desc": "Ajoutez le widget de chat ou reliez les canaux et commencez à assister vos clients."
+    }
+  },
+  "about": {
+    "small": "À propos de nous",
+    "title": "Conçue pour un support plus intelligent",
+    "description": "Une plateforme moderne de support client propulsée par l’IA, conçue pour aider les équipes à communiquer, répondre et faire évoluer les conversations en toute fluidité. Elle permet aux entreprises de créer un agent de chat intelligent et personnalisable, offrant des expériences cohérentes sur les canaux avec un contrôle total de la sécurité et de la conformité.",
+    "description2": "Notre mission est de simplifier la communication avec les clients et de réduire les temps de réponse, en donnant aux équipes du monde entier des systèmes de chat intelligents, personnalisables et fiables conçus pour la croissance.",
+    "page_title": "À propos de SAFIRA",
+    "page_description_line1": "safira est une plateforme de support client alimentée par l'IA conçue pour aider les entreprises modernes à fournir",
+    "page_description_line2": "un service client plus rapide, plus intelligent et plus sécurisé.",
+    "who_we_are_title": "Qui sommes-nous",
+    "who_we_are_body1": "Nous pensons que l’IA doit faire plus que répondre aux questions. Elle doit autonomiser les équipes, réduire la charge opérationnelle et faire évoluer le support client sans compromettre la qualité ni le contrôle. C’est pourquoi Safira combine des agents de chat intelligents avec une sécurité de niveau entreprise, des flux de travail flexibles et des intégrations fluides — le tout sur une seule plateforme.",
+    "who_we_are_body2": "Safira est conçue pour soutenir les équipes en croissance et les grandes organisations, en particulier dans les environnements réglementés et à forte confiance tels que les services financiers, l’assurance et les opérations d’entreprise.",
+    "mission_title": "Notre mission",
+    "mission_body": "Permettre aux entreprises d’offrir un support client intelligent et fiable en combinant la vitesse de l’IA avec la supervision, la sécurité et le professionnalisme exigés par les entreprises modernes.",
+    "production_title": "Conçue pour des environnements de production réels",
+    "production_body1": "Safira est développée par FIS – Future Information Systems, une entreprise technologique bénéficiant d’une longue expérience dans la conception de systèmes FinTech, InsurTech et d’entreprise déployés en production, dans des environnements critiques.",
+    "production_body2": "Notre expérience des secteurs réglementés façonne Safira, conçue avec la fiabilité, la gouvernance et l’évolutivité à long terme au cœur de sa conception.",
+    "why_choose_title": "Pourquoi les entreprises choisissent la plateforme SAFIRA ?",
+    "why_choose_subtitle": "À mesure que les entreprises grandissent, la communication client devient plus complexe sur plusieurs canaux et avec une base clients en expansion. Safira existe pour",
+    "why_choose_cards": {
+      "card1_title": "Automatiser les conversations répétitives sans perdre en précision",
+      "card2_title": "Soutenir les agents humains plutôt que les remplacer",
+      "card3_title": "Faire évoluer les opérations sans refonte des systèmes ni surcharge technique",
+      "card4_title": "Répondre à des exigences strictes de sécurité et de conformité"
+    }
+  },
+  "usecases": {
+    "title_small": "Cas d’usage",
+    "title": "Scénarios de support client",
+    "items": {
+      "item1_title": "Support client",
+      "item1_desc": "Fournir des réponses 24/7 et orienter les demandes vers les équipes concernées.",
+      "item2_title": "Support client",
+      "item2_desc": "Faciliter la communication, stocker les données et synchroniser avec le système CRM.",
+      "item3_title": "Help desk interne",
+      "item3_desc": "Fournir des réponses immédiates aux demandes techniques ou RH."
+    }
+  },
+  "security": {
+    "section_small": "Sécurité & Confiance",
+    "title": "Sécurité de niveau entreprise",
+    "cards": {
+      "rbac_title": "Contrôle d’accès basé sur les rôles (RBAC)",
+      "rbac_desc": "Contrôlez l’accès selon les rôles et permissions pour sécuriser votre équipe.",
+      "encrypted_title": "Données chiffrées",
+      "encrypted_desc": "Protégez les données au repos et en transit pour sécuriser les informations sensibles.",
+      "gdpr_title": "Conforme au RGPD",
+      "gdpr_desc": "Conforme au RGPD afin de garantir des standards élevés de confidentialité.",
+      "audit_title": "Journaux d’audit complets",
+      "audit_desc": "Suivez toutes les actions avec des journaux complets pour la transparence et la conformité."
+    }
+  },
+  "plans2": {
+    "small": "Tarifs",
+    "title": "Choisissez le plan idéal pour votre entreprise",
+    "flexible_title": "Plans Flexibles pour Chaque Équipe",
+    "per_month": "par mois",
+    "plans": {
+      "basic": {
+        "label": "Basique",
+        "price": "$99",
+        "cta": "Commencer",
+        "desc": "Conçu pour les petites équipes qui commencent avec des options de base intégrées.",
+        "features": [
+          "Un canal",
+          "300 messages",
+          "Une source de connaissance",
+          "Rapports de base",
+          "SLA standard",
+          "Support par email"
+        ]
+      },
+      "standard": {
+        "label": "Standard",
+        "price": "$350",
+        "cta": "Commencer",
+        "desc": "Conçu pour les équipes qui ont besoin d'une meilleure personnalisation et d'intégrations prêtes à l'emploi.",
+        "features": [
+          "Deux canaux",
+          "1500 messages",
+          "3 sources de connaissance",
+          "Intégrations principales",
+          "Rapports avancés",
+          "Support prioritaire"
+        ]
+      },
+      "pro": {
+        "label": "Professionnel",
+        "price": "$850",
+        "cta": "Commencer",
+        "desc": "Les fonctionnalités les plus puissantes avec des performances élevées et des analyses avancées.",
+        "features": [
+          "Canaux illimités",
+          "Messages illimités",
+          "Sources de connaissance illimitées",
+          "Intégrations avancées",
+          "Support prioritaire",
+          "Analyses et rapports avancés"
+        ]
+      },
+      "enterprise": {
+        "label": "Entreprise",
+        "price": "Tarification personnalisée",
+        "cta": "Contactez-nous",
+        "desc": "Solutions flexibles pour les entreprises avec sécurité avancée et déploiement privé ou cloud.",
+        "features": [
+          "Sécurité de niveau entreprise",
+          "Déploiement privé ou cloud",
+          "SLA personnalisé",
+          "Gouvernance et journaux d'audit",
+          "Support 24/7",
+          "Rapports et tableaux de bord personnalisés"
+        ]
+      }
+    },
+    "closing_text": "SAFIRA représente une étape pratique vers la transformation numérique intelligente pour gérer les interactions client avec une grande efficacité et une fiabilité avancée.",
+    "comparison_notes_title": "Notes",
+    "comparison_notes": [
+      "Tous les prix excluent la TVA et ne comprennent pas la mise en place, la personnalisation ou l'intégration du système.",
+      "La mise en place et l'intégration sont tarifées séparément en fonction de l'ampleur des travaux.",
+      "Tous les plans sont soumis à une politique d'utilisation équitable. Les mises à niveau entre les plans sont disponibles à tout moment.",
+      "Des réductions sont disponibles pour les paiements annuels."
+    ],
+    "comparison_title": "Comparaison des Plans & Fonctionnalités",
+    "comparison": {
+      "features": "Fonctionnalités",
+      "basic": "Basique",
+      "standard": "Standard",
+      "pro": "+ Professionnel",
+      "enterprise": "Entreprise",
+      "rows": [
+        {
+          "label": "Canaux de Communication",
+          "basic": "1 Canal",
+          "standard": "3 Canaux",
+          "pro": "Tous les Canaux",
+          "enterprise": "Canaux selon les besoins"
+        },
+        {
+          "label": "Messages par Mois",
+          "basic": "Jusqu'à 3 000",
+          "standard": "Jusqu'à 10 000",
+          "pro": "Jusqu'à 50 000",
+          "enterprise": "Selon les besoins"
+        },
+        {
+          "label": "Workflows",
+          "basic": "1 Workflow",
+          "standard": "3 Workflows",
+          "pro": "Illimité",
+          "enterprise": "Illimité"
+        },
+        {
+          "label": "Base de Données",
+          "basic": "1 Base de données",
+          "standard": "3 Bases de données",
+          "pro": "Illimité",
+          "enterprise": "Illimité"
+        },
+        {
+          "label": "Rapports",
+          "basic": "Basique",
+          "standard": "Tableau de bord",
+          "pro": "Analyses avancées",
+          "enterprise": "Dédié"
+        },
+        {
+          "label": "Gestionnaire de Compte",
+          "basic": "—",
+          "standard": "—",
+          "pro": "✓",
+          "enterprise": "✓"
+        },
+        {
+          "label": "Support Technique",
+          "basic": "Basique",
+          "standard": "Amélioré",
+          "pro": "Prioritaire",
+          "enterprise": "SLA Spécial"
+        },
+        {
+          "label": "Personnalisation et Intégration",
+          "basic": "—",
+          "standard": "Selon les besoins",
+          "pro": "Selon les besoins",
+          "enterprise": "Avancé"
+        }
+      ]
+    }
+  },
+  "features_page": {
+    "page_title": "Fonctionnalités",
+    "page_description": "Des outils et fonctionnalités puissants conçus pour transformer votre support client.",
+    "title_small": "Pourquoi nous choisir ?",
+    "item1_title": "Connectez vos connaissances",
+    "item1_desc": "Entraînez Safira avec votre contenu existant :",
+    "item1_li1": "Pages du site Web",
+    "item1_li2": "FAQ",
+    "item1_li3": "Documents et politiques",
+    "item1_extra": "Afin que votre agent IA reflète la connaissance de votre entreprise et accélère votre langue.",
+    "item2_title": "Communication multi-canaux",
+    "item2_desc": "Interagissez avec les clients sur plusieurs canaux à partir d'une seule plateforme",
+    "item2_li1": "Chat Web",
+    "item2_li2": "WhatsApp",
+    "item2_li3": "Messenger",
+    "item2_extra": "Canaux supplémentaires à mesure que votre entreprise se développe",
+    "item3_title": "Automatisation des flux de travail",
+    "item3_desc": "Concevez des flux de travail structurés pour :",
+    "item3_li1": "Collecter les informations des clients",
+    "item3_li2": "Router les demandes",
+    "item3_li3": "Déclencher des actions ou des approbations",
+    "item3_extra": "Le tout avec la facilité du glisser-déposer sans code.",
+    "item4_title": "Sécurité de niveau entreprise",
+    "item4_desc": "Safira est construit avec la sécurité et la conformité au cœur :",
+    "item4_li1": "Contrôle d'accès basé sur les rôles (RBAC)",
+    "item4_li2": "Données chiffrées au repos et en transit",
+    "item4_li3": "Infrastructure prête pour le RGPD",
+    "item4_extra": "Hébergement hautement disponible (99,9% de disponibilité)",
+    "item5_title": "Analytique et Insights",
+    "item5_desc": "Obtenez une visibilité claire sur :",
+    "item5_li1": "Volume et tendances des conversations",
+    "item5_li2": "Performance de l'agent",
+    "item5_li3": "Intention et satisfaction du client",
+    "item5_extra": "Utilisez les informations basées sur les données pour améliorer continuellement la qualité du support.",
+    "item6_title": "Intégrations Transparentes",
+    "item6_desc": "Connectez Safira avec votre écosystème existant, notamment :",
+    "item6_li1": "Systèmes de gestion de la relation client",
+    "item6_li2": "Plateformes de support technique",
+    "item6_li3": "Applications métier internes",
+    "item6_extra": "Assurant un flux de données fluide dans votre organisation.",
+    "item7_title": "Intégration Rapide et Simple",
+    "item7_desc": "Lancez votre agent IA rapidement :",
+    "item7_li1": "Aucune configuration technique complexe",
+    "item7_li2": "Configuration facile en utilisant votre contenu existant",
+    "item7_li3": "Contrôle total sur le ton, les règles et le comportement",
+    "item7_extra": "",
+    "item8_title": "Conçu pour l'Évolution",
+    "item8_desc": "Safira grandit avec votre entreprise — de l'adoption précoce au déploiement à l'échelle de l'entreprise — sans interruption ni limitation de plateforme.",
+    "item8_li1": "",
+    "item8_li2": "",
+    "item8_li3": "",
+    "item8_extra": "",
+    "why_choose_title": "Pourquoi les entreprises choisissent la plateforme SAFIRA ?",
+    "why_choose_subtitle": "À mesure que les entreprises se développent, la communication client devient plus complexe sur plusieurs canaux et une base client croissante. Safira existe pour",
+    "why_choose_cards": {
+      "card1_title": "Évolutif pour la croissance",
+      "card1_desc": "S'adapte de manière transparente à mesure que votre équipe et vos volumes de clients augmentent — sans interruption.",
+      "card2_title": "Sécurisé et conforme",
+      "card2_desc": "Sécurité de niveau entreprise avec contrôle total sur l'accès, la protection des données et la conformité.",
+      "card3_title": "Plateforme tout-en-un",
+      "card3_desc": "Gérez les conversations, les intégrations, les connaissances et les informations à partir d'un seul tableau de bord.",
+      "card4_title": "Intégration rapide et facile",
+      "card4_desc": "Lancez votre agent IA rapidement en utilisant votre site Web ou vos documents — sans complexité technique.",
+      "card5_title": "Intégrations transparentes",
+      "card5_desc": "Connectez-vous facilement aux systèmes CRM, aux outils de support, aux canaux de messagerie et aux applications métier.",
+      "card6_title": "Utilisation transparente",
+      "card6_desc": "Visibilité claire sur l'utilisation, les limites et la flexibilité du forfait — en temps réel, dans toutes les équipes mondialement."
+    },
+    "cta_title": "Prêt à transformer votre service client ?",
+    "cta_subtitle": "Commencez avec SAFIRA aujourd'hui et découvrez la différence que peut faire l'automatisation intelligente.",
+    "cta_button": "Commencer gratuitement",
+    "cta_secondary_button": "Demander une démo"
+  },
+  "resources": {
+    "page_title": "Blog et Ressources",
+    "page_description": "Perspectives, guides et mises à jour sur le support client alimenté par l'IA et les services numériques.",
+    "tabs": [
+      { "id": "all", "label": "Tous" },
+      { "id": "ai", "label": "IA et Automatisation" },
+      { "id": "support", "label": "Support Client" },
+      { "id": "industry", "label": "Cas d'Usage Sectoriels" },
+      { "id": "updates", "label": "Mises à jour du Produit" }
+    ],
+    "cta_title": "Rejoignez-nous pour transformer le service client.",
+    "cta_subtitle": "Découvrez l'avenir de l'interaction client alimentée par l'IA aujourd'hui.",
+    "cta_button": "Commencer gratuitement",
+    "cta_secondary_button": "En savoir plus",
+    "aiSupport": {
+      "title": "Support Client Alimenté par l'IA",
+      "description": "L'intelligence artificielle transforme la façon dont les organisations interagissent avec leurs<br>clients en permettant des réponses instantanées, en automatisant les processus<br>répétitifs et en fournissant des informations cohérentes et précises sur plusieurs<br>canaux de communication. Au lieu de s'appuyer uniquement sur des agents humains,<br>les systèmes de support alimentés par l'IA peuvent fonctionner 24h/24, réduire<br>les temps d'attente et assurer une expérience client unifiée."
+    }
+  },
+  "vision": {
+    "page_title": "Notre Vision",
+    "page_description": "Façonner l'avenir du service client grâce à l'automatisation intelligente.",
+    "section1_title": "Notre vision pour l'avenir",
+    "section1_body": "Nous envisageons un monde où chaque entreprise, quelle que soit sa taille, a accès à un service client de classe mondiale alimenté par l'IA. Notre mission est de démocratiser le service client intelligent en fournissant des outils faciles à utiliser, sécurisés et conçus pour la croissance.",
+    "section2_title": "Comment nous la construisons",
+    "section2_body": "Nous nous engageons à l'innovation continue en matière d'IA, de sécurité et d'expérience utilisateur. Notre équipe travaille sans relâche pour développer des solutions qui aident les entreprises à augmenter leurs opérations de support sans sacrifier la qualité ou la sécurité.",
+    "section3_title": "Notre Impact",
+    "section3_body": "En partenariat avec les grandes entreprises et les startups innovantes, nous transformons la façon dont les entreprises interagissent avec leurs clients. Notre plateforme traite des millions de conversations quotidiennement, aidant les entreprises à réduire les délais de réponse et à améliorer la satisfaction des clients.",
+    "cta_title": "Rejoignez-nous pour transformer le service client.",
+    "cta_subtitle": "Découvrez l'avenir de l'interaction client alimentée par l'IA aujourd'hui.",
+    "cta_button": "Commencer gratuitement",
+    "cta_secondary_button": "En savoir plus"
+  },
+  "pricing": {
+    "page_title": "SAFIRA Plans & Tarifs",
+    "page_description": "Choisissez le forfait qui convient à la taille de votre organisation et commencez la transition\nvers des services intelligents.",
+    "cta_title": "Prêt à commencer?",
+    "cta_subtitle": "Sélectionnez un plan et commencez votre parcours avec SAFIRA aujourd'hui.",
+    "cta_button": "Essai gratuit",
+    "cta_secondary_button": "Contacter les ventes"
+  },
+  "contact": {
+    "page_title": "Nous contacter",
+    "page_description": "pour savoir comment la plateforme SAFIRA peut permettre à votre organisation de fournir des\nservices numériques intelligents et automatisés.",
+    "info_title": "Coordonnées",
+    "info_body": "Des questions? Notre équipe est là pour vous aider. Contactez-nous par l'une des méthodes suivantes.",
+    "form_name": "Nom",
+    "form_email": "Email",
+    "form_phone": "Numéro de téléphone",
+    "form_message": "Message",
+    "form_submit": "Envoyer le message",
+    "cta_title": "Vous ne trouvez pas ce que vous cherchez?",
+    "cta_subtitle": "Notre équipe d'assistance est disponible pour répondre à vos questions.",
+    "cta_button": "Parcourir les tarifs",
+    "cta_secondary_button": "Réserver une démo"
+  },
+  "support": {
+    "title": "Commencez dès aujourd'hui à développer votre service client.",
+    "subtitle": "Renforcez votre équipe avec un support alimenté par l'IA et des réponses plus rapides.",
+    "cta": "Commencer"
+  },
+  "testimonials": {
+    "small": "Témoignages",
+    "title": "Ce que disent nos clients",
+    "items": [
+      {
+        "text": "Service excellent et rapide. La plateforme a amélioré le temps de réponse et la satisfaction.",
+        "name": "Mickael Grants",
+        "role": "PDG"
+      },
+      {
+        "text": "Configuration facile et intégrations fluides, avec des réponses très précises.",
+        "name": "Amina Khalil",
+        "role": "Responsable Support"
+      },
+      {
+        "text": "Solution fiable et flexible ; gain de temps et réduction des coûts tout en gardant la qualité.",
+        "name": "Omar Nassar",
+        "role": "Responsable Opérations"
+      },
+      {
+        "text": "Nous avons géré l’augmentation de la demande de support grâce à l’automatisation.",
+        "name": "Lina Haddad",
+        "role": "Customer Success Lead"
+      },
+      {
+        "text": "Les rapports et insights nous ont aidés à décider plus vite et mieux.",
+        "name": "Karim Zidan",
+        "role": "Chef de produit"
+      }
+    ]
+  },
+  "footer": {
+    "description": "Safira est une plateforme de support client alimentée par l'IA qui aide les entreprises à automatiser les conversations, améliorer les temps de réponse et offrir des expériences client plus intelligentes.",
+    "useful_links_title": "Liens Utiles",
+    "about": "À propos",
+    "features": "Fonctionnalités",
+    "resources": "Ressources",
+    "prices": "Tarifs",
+    "help_title": "Aide",
+    "customer_support": "Support Client",
+    "faqs": "FAQ",
+    "privacy_policy": "Politique de Confidentialité",
+    "contact_us": "Nous Contacter",
+    "connect_title": "Connectez-Vous Avec Nous",
+    "location": "Ramallah, Palestine",
+    "phone": "022409416",
+    "email": "info@fis.ps",
+    "all_rights_reserved": "Tous droits réservés."
+  }
+}

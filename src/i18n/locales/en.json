@@ -1,0 +1,406 @@
+{
+  "common": {
+    "buttons": {
+      "submit": "Submit",
+      "cancel": "Cancel",
+      "login": "Sign in"
+    },
+    "welcome": "Welcome to SAFIRA Platform"
+  },
+  "home": {
+    "title_line1": "AI-powered customer support platform",
+    "title_line2": "for modern companies",
+    "subtitle": "Deliver faster and more efficient customer service with AI-powered chat agents, designed for growing teams and large enterprises.",
+    "cta_start": "Start now",
+    "cta_contact": "Contact us"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "resources": "Resources",
+    "blog": "Features",
+    "pricing": "Pricing",
+    "contact": "Contact"
+  },
+  "stats": {
+    "processed": "High-volume conversations processed",
+    "agents": "AI chat agents deployed",
+    "uptime": "Platform uptime & reliability",
+    "rating": "Customer rating"
+  },
+  "auth": {
+    "signin": {
+      "title": "Sign In",
+      "email": "Email",
+      "password": "Password",
+      "email_placeholder": "you@example.com",
+      "password_placeholder": "••••••••",
+      "submit": "Sign in"
+    }
+  },
+  "features": {
+    "title_small": "Why choose us?",
+    "title": "Why companies choose SAFIRA platform?",
+    "items": {
+      "scalable_title": "Scalable for growth",
+      "scalable_desc": "Adapts smoothly to your team growth and customer volume — without disruption.",
+      "secure_title": "Secure & compliant",
+      "secure_desc": "Enterprise-grade security with full control over access, data protection, and compliance.",
+      "platform_title": "Unified platform",
+      "platform_desc": "Manage conversations, integrations, knowledge, and insights from a single dashboard.",
+      "quick_title": "Fast & easy setup",
+      "quick_desc": "Launch your AI agent quickly using your website or documents.",
+      "integration_title": "Seamless integration",
+      "integration_desc": "Connect effortlessly with CRM systems, messaging channels, and business apps.",
+      "transparent_title": "Transparent usage",
+      "transparent_desc": "Clear visibility into usage, limits, and plan flexibility in real time across teams."
+    }
+  },
+  "how": {
+    "title_small": "How does it work?",
+    "title": "Discover our simple and easy process",
+    "steps": {
+      "step1": "Step 1",
+      "step2": "Step 2",
+      "step3": "Step 3",
+      "step4": "Step 4"
+    },
+    "items": {
+      "knowledge_title": "Connect knowledge",
+      "knowledge_desc": "Bring FAQs, documents, or website content so we understand your business.",
+      "agent_title": "Set up the agent",
+      "agent_desc": "Customize tone, rules, and behavior to match your brand.",
+      "test_title": "Test & refine",
+      "test_desc": "Review conversations, test responses, and fine-tune performance before launch.",
+      "launch_title": "Launch!",
+      "launch_desc": "Add the chat widget or link channels and start supporting customers."
+    }
+  },
+  "about": {
+    "small": "About us",
+    "title": "Designed for smarter support",
+    "description": "A modern customer support platform powered by AI, built to help teams communicate, respond, and scale conversations smoothly. Enables companies to create a customizable intelligent chat agent, delivering consistent experiences across channels with full security and compliance control.",
+    "description2": "Our mission is to streamline customer communication and reduce response times, empowering teams worldwide with smart, customizable, and reliable chat systems designed for growth.",
+    "page_title": "About Us SAFIRA",
+    "page_description_line1": "safira is an ai-powered customer support platform designed to help modern businesses deliver",
+    "page_description_line2": "faster, smarter, and more secure customer interactions.",
+    "who_we_are_title": "Who We Are",
+    "who_we_are_body1": "We believe AI should do more than answer questions. It should empower teams, reduce operational load, and scale customer support without compromising quality or control. That’s why Safira combines intelligent AI chat agents with enterprise-grade security, flexible workflows, and seamless integrations — all in one platform.",
+    "who_we_are_body2": "Safira is built to support growing teams and large organizations, especially in regulated and high-trust environments such as financial services, insurance, and enterprise operations.",
+    "mission_title": "Our mission",
+    "mission_body": "To enable businesses to deliver intelligent, reliable customer support by combining the speed of AI with the oversight, security, and professionalism required by modern enterprises.",
+    "production_title": "Built for Real Production Environments",
+    "production_body1": "Safira is developed by FIS – Future Information Systems, a technology company with long-standing experience in building FinTech, InsurTech, and enterprise systems deployed in real, mission-critical environments.",
+    "production_body2": "Our background in regulated industries shapes how Safira is designed with reliability, governance, and long-term scalability at its core.",
+    "why_choose_title": "Why Businesses Choose SAFIRA Platform ?",
+    "why_choose_subtitle": "As businesses scale, customer communication becomes more complex across multiple channels and growing customer bases. Safira exists to",
+    "why_choose_cards": {
+      "card1_title": "Automate Repetitive Conversations Without Losing Accuracy",
+      "card2_title": "Support Human Agents Instead Of Replacing Them",
+      "card3_title": "Scale Operations Without System Rewrites Or Technical Overhead",
+      "card4_title": "Meet Strict Security And Compliance Expectations"
+    },
+    "cta_title": "Start transforming your customer support today.",
+    "cta_subtitle": "Empower your team with AI-driven support and faster responses.",
+    "cta_button": "Start Free",
+    "cta_secondary_button": "Request Demo"
+  },
+  "usecases": {
+    "title_small": "Use cases",
+    "title": "Customer support scenarios",
+    "items": {
+      "item1_title": "Customer support",
+      "item1_desc": "Provide 24/7 answers and route inquiries smoothly to any team.",
+      "item2_title": "Customer support",
+      "item2_desc": "Enable customer communication, store data, and sync with the CRM system.",
+      "item3_title": "Internal help desk",
+      "item3_desc": "Provide instant answers for technical support or HR requests."
+    }
+  },
+  "security": {
+    "section_small": "Security & Trust",
+    "title": "Enterprise-Grade Security",
+    "cards": {
+      "rbac_title": "Role-based access control (RBAC)",
+      "rbac_desc": "Control access by user roles and permissions to keep your team secure.",
+      "encrypted_title": "Encrypted data",
+      "encrypted_desc": "Protect data at rest and in transit to secure sensitive information.",
+      "gdpr_title": "GDPR compliant",
+      "gdpr_desc": "Compliant with GDPR regulations to ensure high privacy standards.",
+      "audit_title": "Full audit logs",
+      "audit_desc": "Track all actions with complete logs for transparency and compliance."
+    }
+  },
+  "plans2": {
+    "small": "Pricing",
+    "title": "Choose the right plan for your business",
+    "flexible_title": "Flexible Plans for Every Team",
+    "plans": {
+      "basic": {
+        "label": "Basic",
+        "price": "$99",
+        "cta": "Start now",
+        "desc": "Designed for small teams taking their first steps with integrated basic options.",
+        "features": [
+          "One channel",
+          "300 messages",
+          "One knowledge source",
+          "Basic reports",
+          "Standard SLA",
+          "Email support"
+        ]
+      },
+      "standard": {
+        "label": "Standard",
+        "price": "$350",
+        "cta": "Start now",
+        "desc": "Designed for teams that need better customization and ready integrations.",
+        "features": [
+          "Two channels",
+          "1500 messages",
+          "3 knowledge sources",
+          "Core integrations",
+          "Advanced reports",
+          "Priority support"
+        ]
+      },
+      "pro": {
+        "label": "Professional",
+        "price": "$850",
+        "cta": "Start now",
+        "desc": "Most powerful features with high performance and advanced analytics.",
+        "features": [
+          "Unlimited channels",
+          "Unlimited messages",
+          "Unlimited knowledge sources",
+          "Advanced integrations",
+          "Priority support",
+          "Advanced analytics and reports"
+        ]
+      },
+      "enterprise": {
+        "label": "Enterprise",
+        "price": "Custom pricing",
+        "cta": "Contact us",
+        "desc": "Flexible solutions for enterprises with advanced security and private or cloud deployment.",
+        "features": [
+          "Enterprise-grade security",
+          "Private or cloud deployment",
+          "Custom SLA",
+          "Governance and audit logs",
+          "24/7 support",
+          "Custom reports and dashboards"
+        ]
+      }
+    },
+    "comparison_title": "Plan Comparison & Features",
+    "comparison": {
+      "features": "Features",
+      "basic": "Basic",
+      "standard": "Standard",
+      "pro": "Professional",
+      "enterprise": "Enterprise",
+      "rows": [
+        {"label": "Communication Channels", "basic": "1 Channel", "standard": "3 Channels", "pro": "All Channels", "enterprise": "As Needed Channels"},
+        {"label": "Messages Per Month", "basic": "Up To 3,000", "standard": "Up To 10,000", "pro": "Up To 50,000", "enterprise": "As Needed"},
+        {"label": "Workflows", "basic": "1 Workflow", "standard": "3 Workflows", "pro": "Unlimited", "enterprise": "Unlimited"},
+        {"label": "Database", "basic": "1 Database", "standard": "3 Databases", "pro": "Unlimited", "enterprise": "Unlimited"},
+        {"label": "Reports", "basic": "Basic", "standard": "Dashboard", "pro": "Advanced Insights", "enterprise": "Dedicated"},
+        {"label": "Account Manager", "basic": "—", "standard": "—", "pro": "✓", "enterprise": "✓"},
+        {"label": "Technical Support", "basic": "Basic", "standard": "Enhanced", "pro": "Priority", "enterprise": "SLA Special"},
+        {"label": "Customization & Integration", "basic": "—", "standard": "As Needed", "pro": "As Needed", "enterprise": "Advanced"}
+      ]
+    },
+    "comparison_notes_title": "Notes",
+    "comparison_notes": [
+      "All prices exclude VAT and do not include setup, customization, or system integration.",
+      "Setup and integration are priced separately based on the scope of work.",
+      "All plans are subject to a Fair Usage Policy. Upgrades between plans are available at any time.",
+      "Discounts are available for annual payments."
+    ],
+    "closing_text": "SAFIRA represents a practical step towards smart digital transformation, enabling organizations to deliver\nbetter services at a lower cost and with greater efficiency."
+  },
+  "features_page": {
+    "page_title": "Features",
+    "page_description": "Powerful tools and capabilities designed to transform your customer support.",
+    "title_small": "Why choose us?",
+    "item1_title": "Connect Your Knowledge",
+    "item1_desc": "Train Safira using your existing content:",
+    "item1_li1": "Website pages",
+    "item1_li2": "FAQs",
+    "item1_li3": "Documents and policies",
+    "item1_extra": "So your AI agent reflects your business knowledge and speeds your language.",
+    "item2_title": "Multi-Channel Communication",
+    "item2_desc": "Engage customers across multiple channels from a single platform",
+    "item2_li1": "Web Chat",
+    "item2_li2": "WhatsApp",
+    "item2_li3": "Messenger",
+    "item2_extra": "Additional channels as your business grows",
+    "item3_title": "Workflow Automation",
+    "item3_desc": "Design structured workflows to:",
+    "item3_li1": "Collect customer information",
+    "item3_li2": "Route requests",
+    "item3_li3": "Trigger actions or approvals",
+    "item3_extra": "All with no-code drag-and-drop simplicity.",
+    "item4_title": "Enterprise-Grade Security",
+    "item4_desc": "Safira is built with security and compliance at its core:",
+    "item4_li1": "Role-Based Access Control (RBAC)",
+    "item4_li2": "Encrypted data at rest and in transit",
+    "item4_li3": "GDPR-ready infrastructure",
+    "item4_extra": "High-availability hosting (99.9% uptime)",
+    "item5_title": "Analytics & Insights",
+    "item5_desc": "Gain clear visibility into:",
+    "item5_li1": "Conversation volume and trends",
+    "item5_li2": "Agent performance",
+    "item5_li3": "Customer intent and satisfaction",
+    "item5_extra": "Use data-driven insights to continuously improve support quality.",
+    "item6_title": "Seamless Integrations",
+    "item6_desc": "Connect Safira with your existing ecosystem, including:",
+    "item6_li1": "CRM systems",
+    "item6_li2": "Helpdesk platforms",
+    "item6_li3": "Internal business applications",
+    "item6_extra": "Ensuring smooth data flow across your organization.",
+    "item7_title": "Fast & Simple Onboarding",
+    "item7_desc": "Launch your AI agent quickly:",
+    "item7_li1": "No complex technical setup",
+    "item7_li2": "Easy configuration using your existing content",
+    "item7_li3": "Full control over tone, rules, and behavior",
+    "item7_extra": "",
+    "item8_title": "Built To Scale",
+    "item8_desc": "Safira grows with your business — from early adoption to enterprise-wide deployment — without disruption or platform limitations.",
+    "item8_li1": "",
+    "item8_li2": "",
+    "item8_li3": "",
+    "item8_extra": "",
+    "why_choose_title": "Why Businesses Choose SAFIRA Platform ?",
+    "why_choose_subtitle": "As businesses scale, customer communication becomes more complex across multiple channels and growing customer bases. Safira exists to",
+    "why_choose_cards": {
+      "card1_title": "Scalable For Growth",
+      "card1_desc": "Adapts seamlessly as your team and customer volume grow — without disruption.",
+      "card2_title": "Secure & Compliant",
+      "card2_desc": "Enterprise-grade security with full control over access, data protection, and compliance.",
+      "card3_title": "All-In-One Platform",
+      "card3_desc": "Manage conversations, integrations, knowledge, and insights from a single dashboard.",
+      "card4_title": "Fast & Easy Onboarding",
+      "card4_desc": "Launch your AI agent quickly using your website or documents — no technical complexity.",
+      "card5_title": "Seamless Integrations",
+      "card5_desc": "Connect easily with CRMs, helpdesk tools, messaging channels, & business applications.",
+      "card6_title": "Transparent Usage",
+      "card6_desc": "Clear visibility into usage, limits, and plan flexibility — in real time, across all teams globally."
+    },
+    "cta_title": "Ready to transform your customer support?",
+    "cta_subtitle": "Start with SAFIRA today and experience the difference intelligent automation can make.",
+    "cta_button": "Start Free",
+    "cta_secondary_button": "Request Demo"
+  },
+  "support": {
+    "title": "Start building your customer support today.",
+    "subtitle": "Equip your team with AI-powered support and faster responses.",
+    "cta": "Start now"
+  },
+  "testimonials": {
+    "small": "Testimonials",
+    "title": "What our clients say",
+    "items": [
+      {
+        "text": "Excellent and fast service. The platform improved response times and customer satisfaction.",
+        "name": "Mickael Grants",
+        "role": "CEO"
+      },
+      {
+        "text": "Easy setup and seamless integrations, with impressively accurate answers.",
+        "name": "Amina Khalil",
+        "role": "Head of Support"
+      },
+      {
+        "text": "Reliable and flexible solution; saved time and reduced operational costs while keeping quality.",
+        "name": "Omar Nassar",
+        "role": "Operations Lead"
+      },
+      {
+        "text": "We handled rising support demand effortlessly thanks to smart automation.",
+        "name": "Lina Haddad",
+        "role": "Customer Success Lead"
+      },
+      {
+        "text": "Reports and insights gave us a clear view to improve faster decisions.",
+        "name": "Karim Zidan",
+        "role": "Product Manager"
+      }
+    ]
+  },
+  "resources": {
+    "page_title": "Blog & Resources",
+    "page_description": "Insights, guides, and updates on AI-powered customer support and digital services.",
+    "tabs": [
+      { "id": "all", "label": "All" },
+      { "id": "ai", "label": "AI & Automation" },
+      { "id": "support", "label": "Customer Support" },
+      { "id": "industry", "label": "Industry Use Cases" },
+      { "id": "updates", "label": "Product Updates" }
+    ],
+    "cta_title": "Join us in transforming customer support.",
+    "cta_subtitle": "Experience the future of AI-powered customer interaction today.",
+    "cta_button": "Start Free",
+    "cta_secondary_button": "Learn More",
+    "aiSupport": {
+      "title": "AI-Powered Customer Support",
+      "description": "Artificial Intelligence is reshaping how organizations interact with their<br>customers by enabling instant responses, automating repetitive processes, and<br>providing consistent and accurate information across multiple communication<br>channels. Instead of relying solely on human agents, AI-powered support<br>systems can operate 24/7, reduce waiting times, and ensure a unified customer<br>experience."
+    }
+  },
+  "vision": {
+    "page_title": "Our Vision",
+    "page_description": "Shaping the future of customer support through intelligent automation.",
+    "section1_title": "Our Vision for the Future",
+    "section1_body": "We envision a world where every business, regardless of size, has access to world-class customer support powered by AI. Our mission is to democratize intelligent customer service by providing tools that are easy to use, secure, and built for growth.",
+    "section2_title": "How We're Building It",
+    "section2_body": "We're committed to continuous innovation in AI, security, and user experience. Our team works tirelessly to develop solutions that help businesses scale their support operations without sacrificing quality or security.",
+    "section3_title": "Our Impact",
+    "section3_body": "By partnering with leading enterprises and innovative startups, we're transforming how companies interact with their customers. Our platform processes millions of conversations daily, helping businesses reduce response times and improve customer satisfaction.",
+    "cta_title": "Join us in transforming customer support.",
+    "cta_subtitle": "Experience the future of AI-powered customer interaction today.",
+    "cta_button": "Start Free",
+    "cta_secondary_button": "Learn More"
+  },
+  "pricing": {
+    "page_title": "SAFIRA Plans & Prices",
+    "page_description": "Choose the package that suits the size of your organization and start the transition to smart\nservices.",
+    "cta_title": "Ready to get started?",
+    "cta_subtitle": "Select a plan and begin your journey with SAFIRA today.",
+    "cta_button": "Start Free",
+    "cta_secondary_button": "Contact Sales"
+  },
+  "contact": {
+    "page_title": "Contact Us",
+    "page_description": "to find out how the SAFIRA platform can enable your organization to deliver smart, automated\ndigital services.",
+    "info_title": "Contact Information",
+    "info_body": "Have questions? Our team is here to help. Get in touch with us through any of the following methods.",
+    "form_name": "Name",
+    "form_email": "Email",
+    "form_phone": "Phone Number",
+    "form_message": "Message",
+    "form_submit": "Send Message",
+    "cta_title": "Can't find what you're looking for?",
+    "cta_subtitle": "Our support team is available to answer any questions.",
+    "cta_button": "Browse Pricing",
+    "cta_secondary_button": "Book a Demo"
+  },
+  "footer": {
+    "description": "Safira is an AI-powered customer support platform helping businesses automate conversations, improve response times, and deliver smarter customer experiences.",
+    "useful_links_title": "Useful Links",
+    "about": "About",
+    "features": "Features",
+    "resources": "Resources",
+    "prices": "Prices",
+    "help_title": "Help",
+    "customer_support": "Customer Support",
+    "faqs": "FAQs",
+    "privacy_policy": "Privacy Policy",
+    "contact_us": "Contact Us",
+    "connect_title": "Connect With Us",
+    "location": "Ramallah, Palestine",
+    "phone": "022409416",
+    "email": "info@fis.ps",
+    "all_rights_reserved": "All Rights Reserved."
+  }
+}
