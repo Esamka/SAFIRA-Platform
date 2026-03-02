@@ -1,4 +1,4 @@
- "use client";
+"use client";
 
 import Image from "next/image";
  import Link from "next/link";
@@ -121,8 +121,7 @@ import { Dropdown } from "@/components/ui/dropdown";
                   border: 'none',
                 }}
               >
-                <span className="hidden sm:inline">{t("common.buttons.login")}</span>
-                <span className="sm:hidden">Sign in</span>
+                <span>{t("common.buttons.login")}</span>
               </Button>
             </Link>
 

@@ -56,7 +56,7 @@ export default function Home() {
 				/>
 
 				{/* Hero Content - positioned above image */}
-				<div className="absolute inset-0 flex items-center justify-center z-20 px-4 sm:px-6">
+				<div className="absolute inset-0 flex items-center justify-center z-20 px-4 sm:px-6 mt-16 sm:mt-0">
 					<div 
 						className="rounded-lg bg-transparent text-center flex flex-col items-center justify-center gap-6 sm:gap-8 md:gap-10 lg:gap-14 w-full max-w-[1018px]"
 					>
