@@ -202,7 +202,7 @@ export default function Home() {
 							{t("about.description2")}
 						</p>
 
-						<div className={`mt-8 flex ${isRTL ? "justify-end" : "justify-start"}`}>
+						<div className="mt-8 flex justify-start">
 							<CTAButton href="/contact" reverseIcon={isRTL}>
 								{t("home.cta_start")}
 							</CTAButton>
@@ -395,26 +395,42 @@ export default function Home() {
 						/>
 						<div className="absolute inset-0" style={{ backgroundColor: "#0b274955", mixBlendMode: "plus-lighter" }} />
 					</div>
-					<div className={`flex-1 ps-0 lg:ps-8 ${isRTL ? "text-right" : "text-left"}`}>
+					<div className={`flex-1 ps-0 lg:ps-8 ${isRTL ? "text-right" : "text-left"}`} dir={isRTL ? "rtl" : "ltr"}>
 						<div className="text-white/70">{t("usecases.title_small")}</div>
 						<h3 className="mt-3 text-2xl sm:text-3xl md:text-4xl font-extrabold">{t("usecases.title")}</h3>
 						<div className="mt-6 space-y-5">
 							<div className="flex items-start gap-4">
-								<Image src="/file.svg" alt="" width={32} height={32} />
+								<div className="shrink-0 w-9 h-9 rounded-lg bg-[#2EA9FF]/15 flex items-center justify-center mt-0.5">
+									<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2EA9FF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+										<path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+									</svg>
+								</div>
 								<div>
 									<div className="text-xl font-semibold">{t("usecases.items.item1_title")}</div>
-									<p className="mt-2 text-white/80">{t("usecases.items.item1_desc")}</p>
+									<p className="mt-2 text-white/80 whitespace-pre-line">{t("usecases.items.item1_desc")}</p>
 								</div>
 							</div>
 							<div className="flex items-start gap-4">
-								<Image src="/file.svg" alt="" width={32} height={32} />
+								<div className="shrink-0 w-9 h-9 rounded-lg bg-[#2EA9FF]/15 flex items-center justify-center mt-0.5">
+									<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2EA9FF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+										<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+										<circle cx="9" cy="7" r="4" />
+										<path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+										<path d="M16 3.13a4 4 0 0 1 0 7.75" />
+									</svg>
+								</div>
 								<div>
 									<div className="text-xl font-semibold">{t("usecases.items.item2_title")}</div>
 									<p className="mt-2 text-white/80">{t("usecases.items.item2_desc")}</p>
 								</div>
 							</div>
 							<div className="flex items-start gap-4">
-								<Image src="/file.svg" alt="" width={32} height={32} />
+								<div className="shrink-0 w-9 h-9 rounded-lg bg-[#2EA9FF]/15 flex items-center justify-center mt-0.5">
+									<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2EA9FF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+										<circle cx="12" cy="12" r="3" />
+										<path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z" />
+									</svg>
+								</div>
 								<div>
 									<div className="text-xl font-semibold">{t("usecases.items.item3_title")}</div>
 									<p className="mt-2 text-white/80">{t("usecases.items.item3_desc")}</p>

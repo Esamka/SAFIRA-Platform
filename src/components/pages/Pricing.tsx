@@ -59,7 +59,7 @@ export default function Pricing() {
 				/>
 			</section>
 
-			<section className="relative mx-auto max-w-[1193.59px] px-6 pb-8 text-white">
+			<section className="relative mx-auto max-w-[1193.59px] px-6 pt-16 md:pt-24 pb-8 text-white">
 				<h2
 					className="text-2xl sm:text-3xl md:text-4xl text-center capitalize mb-10 md:mb-12"
 					style={{

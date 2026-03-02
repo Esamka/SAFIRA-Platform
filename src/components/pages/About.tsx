@@ -60,7 +60,7 @@ export default function About() {
 				/>
 			</section>
 
-			<section className="relative mx-auto max-w-[1193.59px] px-4 sm:px-6 pb-16 md:pb-28">
+			<section className="relative mx-auto max-w-[1193.59px] px-4 sm:px-6 pt-16 md:pt-24 pb-16 md:pb-28">
 				<div className="flex flex-col lg:flex-row items-center lg:items-start gap-10 lg:gap-[120px]">
 					<div className="shrink-0 flex items-start justify-center">
 						<div

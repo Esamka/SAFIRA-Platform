@@ -36,6 +36,22 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="ar" dir="rtl" suppressHydrationWarning>
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                try {
+                  var lng = localStorage.getItem('i18nextLng') || 'ar';
+                  var dir = lng === 'ar' ? 'rtl' : 'ltr';
+                  document.documentElement.setAttribute('lang', lng);
+                  document.documentElement.setAttribute('dir', dir);
+                } catch(e) {}
+              })();
+            `,
+          }}
+        />
+      </head>
       <body className={`${ibmPlex.variable} ${geistSans.variable} ${geistMono.variable} ${orbitron.variable} antialiased`}>
         <Providers>
           <ShowNavbar />

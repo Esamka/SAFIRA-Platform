@@ -39,12 +39,11 @@ export default function PlanComparison({ isRTL }: PlanComparisonProps) {
 
 			{/* Table Container with gradient border and shadow */}
 			<div
-				className="w-full mx-auto rounded-lg overflow-x-auto relative"
+				className="w-full mx-auto rounded-lg overflow-hidden relative"
 				style={{
 					maxWidth: 1252,
 					borderRadius: 10,
-					border: "1.5px solid",
-					borderImage: "linear-gradient(208.17deg, #004788 -0.77%, rgba(29, 61, 91, 0) 35.16%, rgba(15, 66, 114, 0) 67.26%, #004788 98.88%) 1",
+				border: "none",
 					background: "rgba(0, 10, 19, 1)",
 					boxShadow: "0 8px 32px rgba(0, 122, 255, 0.1)",
 				}}
@@ -105,6 +104,7 @@ export default function PlanComparison({ isRTL }: PlanComparisonProps) {
 										width: "18.75%",
 									}}
 								>
+									{plan.key === "pro" && <span className="mr-1">⭐</span>}
 									{plan.label}
 								</th>
 							))}

@@ -100,7 +100,11 @@
       "card2_title": "Soutenir les agents humains plutôt que les remplacer",
       "card3_title": "Faire évoluer les opérations sans refonte des systèmes ni surcharge technique",
       "card4_title": "Répondre à des exigences strictes de sécurité et de conformité"
-    }
+    },
+    "cta_title": "Commencez à transformer votre support client dès aujourd'hui.",
+    "cta_subtitle": "Donnez à votre équipe les moyens d'un support propulsé par l'IA et des réponses plus rapides.",
+    "cta_button": "Essai gratuit",
+    "cta_secondary_button": "Démo"
   },
   "usecases": {
     "title_small": "Cas d’usage",
@@ -204,7 +208,7 @@
       "features": "Fonctionnalités",
       "basic": "Basique",
       "standard": "Standard",
-      "pro": "+ Professionnel",
+      "pro": "Professionnel",
       "enterprise": "Entreprise",
       "rows": [
         {
