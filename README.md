@@ -1,5 +1,12 @@
 # SAFIRA Platform
 
+[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-safira--platform.vercel.app-blue?style=for-the-badge)](https://safira-platform.vercel.app/)
+[![Next.js](https://img.shields.io/badge/Next.js-16.1.6-black?style=flat-square&logo=next.js)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-blue?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+
+> **[🚀 View Live Demo →](https://safira-platform.vercel.app/)**
+
 An AI-powered customer support platform that helps businesses automate conversations, improve response times, and deliver smarter customer experiences.
 
 ## Introduction
@@ -25,8 +32,8 @@ SAFIRA is a modern, intelligent customer support solution built with Next.js and
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/safira-platform.git
-cd safira-platform
+git clone https://github.com/Esamka/SAFIRA-Platform.git
+cd SAFIRA-Platform
 ```
 
 2. Install dependencies:
@@ -126,6 +133,18 @@ The platform supports three languages:
 - **French (Français)** - LTR
 
 Language preferences are automatically detected and stored in browser storage.
+
+## Deployment
+
+The platform is deployed on **Vercel** and available at:
+
+🔗 **https://safira-platform.vercel.app/**
+
+To deploy your own instance:
+
+1. Push the repo to GitHub
+2. Import the project on [Vercel](https://vercel.com)
+3. Vercel will auto-detect Next.js and deploy
 
 ## Contributing
 
