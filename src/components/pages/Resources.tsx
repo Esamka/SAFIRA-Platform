@@ -61,7 +61,7 @@ export default function Resources() {
 			</section>
 
 			<section className="relative mx-auto max-w-[1193.59px] px-6 py-12" dir={isRTL ? "rtl" : "ltr"}>
-				<div className="flex flex-wrap gap-3 sm:gap-4 md:gap-6">
+				<div className="flex flex-wrap gap-3 sm:gap-4 md:gap-6 justify-center w-full">
 					{tabs.map((tab) => (
 						<button
 							key={tab.id}

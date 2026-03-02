@@ -25,13 +25,13 @@ export default function Footer() {
 			/>
 
 			<div className="relative mx-auto max-w-6xl px-6 py-10">
-				<div className={`flex flex-col gap-8 lg:gap-12 ${isRTL ? "lg:flex-row-reverse" : "lg:flex-row"} justify-between`}>
+				   <div className={`flex flex-col gap-8 lg:gap-12 ${isRTL ? "lg:flex-row-reverse" : "lg:flex-row"} justify-between items-start lg:items-center ${isRTL ? "lg:justify-end" : ""}`}>
 					{/* Left Side - Logo and Description */}
-					<div className="flex flex-col gap-4 max-w-xs">
+					   <div className={`flex flex-col gap-4 max-w-xs ${isRTL ? "lg:items-end" : ""}`}> 
 						{/* Logo */}
-						<div className={`flex gap-2 items-center ${isRTL ? "flex-row-reverse" : ""}`}>
+						   <div className={`flex gap-2 items-center ${isRTL ? "flex-row-reverse" : ""} ${isRTL ? "justify-end" : ""}`}>
 							<Image src="/Group 1707480382.png" alt="Logo" width={36} height={36} />
-							<h3 className="font-brand text-2xl font-bold text-white tracking-widest">
+							   <h3 className={`font-brand text-2xl font-bold text-white tracking-widest ${isRTL ? "text-right" : ""}`}> 
 								SAFIRA
 							</h3>
 						</div>
