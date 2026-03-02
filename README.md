@@ -1,56 +1,135 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SAFIRA Platform
+
+An AI-powered customer support platform that helps businesses automate conversations, improve response times, and deliver smarter customer experiences.
+
+## Introduction
+
+SAFIRA is a modern, intelligent customer support solution built with Next.js and TypeScript. It provides businesses with:
+- **AI-Powered Support**: Automated customer support using advanced AI
+- **Multi-Channel Communication**: Support across multiple channels (Chat, Email, Social Media)
+- **Smart Analytics**: Advanced insights and reporting
+- **Workflow Automation**: Intelligent workflow management
+- **Multilingual Support**: Built-in support for Arabic, English, and French
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+- Node.js 16+ 
+- pnpm (recommended) or npm
+- Git
 
+### Installation
+
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/yourusername/safira-platform.git
+cd safira-platform
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+pnpm install
+# or
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Set up environment variables (create `.env.local`):
+```env
+# Add your environment variables here
+NEXT_PUBLIC_API_URL=your_api_url
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Running the Application
 
-## Learn More
+Development mode:
+```bash
+pnpm dev
+# or
+npm run dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+Production build:
+```bash
+pnpm build
+pnpm start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Build and Test
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Build
+```bash
+pnpm build
+```
 
-## Deploy on Vercel
+### Production Start
+```bash
+pnpm start
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Lint
+```bash
+pnpm lint
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+## Features
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+- **Responsive Design**: Works seamlessly across all devices
+- **RTL Support**: Full right-to-left language support for Arabic
+- **Dark Theme UI**: Modern dark interface
+- **Tailwind CSS**: Utility-first CSS framework
+- **i18n Support**: Multi-language support with i18next
+- **Next.js 16**: Latest Next.js features and performance
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+## Project Structure
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+```
+src/
+├── app/                    # Next.js app directory
+├── components/             # React components
+│   ├── pages/             # Page components
+│   ├── sections/          # Section components
+│   ├── layout/            # Layout components
+│   └── ui/                # UI components
+├── i18n/                  # Internationalization
+│   └── locales/           # Translation files (ar, en, fr)
+├── lib/                   # Utilities and helpers
+├── types/                 # TypeScript types
+└── styles/                # Global styles
+```
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+## Technology Stack
+
+- **Framework**: Next.js 16.1.6
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Internationalization**: i18next
+- **UI Components**: Custom React components
+- **Database**: Configurable (add your own)
+- **Deployment**: Vercel or self-hosted
+
+## Localization
+
+The platform supports three languages:
+- **Arabic (العربية)** - RTL
+- **English** - LTR
+- **French (Français)** - LTR
+
+Language preferences are automatically detected and stored in browser storage.
+
+## Contributing
+
+We welcome contributions! Here's how to help:
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+
+## Acknowledgments
+
+- [Next.js Documentation](https://nextjs.org/docs)
+- [Tailwind CSS](https://tailwindcss.com)
+- [i18next](https://www.i18next.com)
+
