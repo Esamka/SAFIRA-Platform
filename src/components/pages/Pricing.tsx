@@ -5,6 +5,7 @@ import Image from "next/image";
 import CTASection from "@/components/sections/CTASection";
 import PricingPlans from "@/components/sections/PricingPlans";
 import PlanComparison from "@/components/sections/PlanComparison";
+import GlowEffect from "@/components/shared/GlowEffect";
 
 export default function Pricing() {
 	const { t, i18n } = useTranslation();
@@ -95,8 +96,17 @@ export default function Pricing() {
 				<PricingPlans showTitle={false} isRTL={isRTL} />
 			</section>
 
-			<section className="relative mx-auto max-w-[1252px] px-6 pb-8 text-white">
+			<section className="relative mx-auto max-w-[1252px] px-6 pb-8 text-white overflow-visible">
 				<PlanComparison isRTL={isRTL} />
+				{/* Glow below notes */}
+				<GlowEffect
+					size={500}
+					top={undefined}
+					bottom={-80}
+					left="-10%"
+					blur={400}
+					zIndex={0}
+				/>
 			</section>
 
 			<section className="relative mx-auto max-w-[1193.59px] px-6 py-8 flex justify-center">
@@ -104,7 +114,7 @@ export default function Pricing() {
 					title={t("pricing.cta_title")}
 					subtitle={t("pricing.cta_subtitle")}
 					buttonText={t("pricing.cta_button")}
-					buttonHref="/sign-in"
+					buttonHref="/contact"
 					secondaryButtonText={t("pricing.cta_secondary_button")}
 					secondaryButtonHref="/contact"
 					backgroundImage="/Frame 1707480369.png"

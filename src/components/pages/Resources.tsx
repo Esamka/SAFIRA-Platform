@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import Image from "next/image";
 import { useState } from "react";
 import ContentSection from "@/components/sections/ContentSection";
+import GlowEffect from "@/components/shared/GlowEffect";
 
 export default function Resources() {
 	const { t, i18n } = useTranslation();
@@ -138,6 +139,15 @@ export default function Resources() {
 			</section>
 
 			<section className="relative mx-auto max-w-[1193.59px] px-6 py-20 flex justify-center">
+				{/* Glow — right side, top area */}
+				<GlowEffect
+					size={500}
+					top={-100}
+					left={undefined}
+					right="-15%"
+					blur={350}
+					zIndex={0}
+				/>
 				<ContentSection
 					image="/Group 3882.png"
 					translationKey="resources.aiSupport"
@@ -154,6 +164,14 @@ export default function Resources() {
 			</section>
 
 			<section className="relative mx-auto max-w-[1193.59px] px-6 py-20 flex justify-center">
+				{/* Glow — left side, middle area */}
+				<GlowEffect
+					size={450}
+					top={-80}
+					left="-12%"
+					blur={300}
+					zIndex={0}
+				/>
 				<ContentSection
 					image="/Group 3882.png"
 					translationKey="resources.aiSupport"

@@ -144,7 +144,7 @@ export default function About() {
 						</p>
 
 						<div className={`mt-8 flex ${isRTL ? "justify-end" : "justify-start"}`}>
-							<CTAButton href="/sign-in" reverseIcon={isRTL}>
+							<CTAButton href="/contact" reverseIcon={isRTL}>
 								{t("home.cta_start")}
 							</CTAButton>
 						</div>
@@ -311,7 +311,7 @@ export default function About() {
 					title={t("about.cta_title")}
 					subtitle={t("about.cta_subtitle")}
 					buttonText={t("about.cta_button")}
-					buttonHref="/sign-in"
+					buttonHref="/contact"
 					secondaryButtonText={t("about.cta_secondary_button")}
 					secondaryButtonHref="/contact"
 					backgroundImage="/Frame 1707480369.png"

@@ -93,7 +93,7 @@ export default function PricingPlans({ showTitle = true, isRTL }: PricingPlansPr
 							<button
 								onMouseEnter={() => setHoveredPlan(id)}
 								onMouseLeave={() => setHoveredPlan(null)}
-								onClick={() => (window.location.href = "/sign-in")}
+								onClick={() => (window.location.href = "/contact")}
 								className="w-full py-2 px-4 rounded-lg text-sm font-medium leading-none text-center cursor-pointer flex items-center justify-center transition-all duration-300"
 								style={{
 									border: id === "pro" ? "none" : `1px solid rgba(255, 255, 255, ${hoveredPlan === id ? "0.6" : "0.3"})`,

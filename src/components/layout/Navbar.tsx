@@ -103,7 +103,7 @@ import { Dropdown } from "@/components/ui/dropdown";
 
           {/* Right Side - Sign In & Language */}
           <div className="flex items-center gap-3 sm:gap-4 flex-shrink-0">
-            <Link href="/sign-in" aria-label={t("common.buttons.login")}> 
+            <Link href="/contact" aria-label={t("common.buttons.login")}> 
               <Button
                 className="hover:shadow-md hover:scale-102 transition-all duration-300 px-3 sm:px-4"
                 style={{

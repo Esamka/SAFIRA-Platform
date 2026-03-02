@@ -8,6 +8,8 @@ import Link from "next/link";
 import { useTranslation } from "react-i18next";
 import { useEffect, useRef, useState } from "react";
 import PricingPlans from "@/components/sections/PricingPlans";
+import WhyChooseCards from "@/components/sections/WhyChooseCards";
+import GlowEffect from "@/components/shared/GlowEffect";
 
 export default function Home() {
 	const { t, i18n } = useTranslation();
@@ -130,8 +132,8 @@ export default function Home() {
 								alignItems: "center",
 							}}
 						>
-							<CTAButton href="/sign-in">{t("home.cta_start")}</CTAButton>
-							<Link href="#contact">
+							<CTAButton href="/contact">{t("home.cta_start")}</CTAButton>
+							<Link href="/contact">
 								<button
 									style={{
 										width: 151,
@@ -151,8 +153,9 @@ export default function Home() {
 										fontSize: 16,
 										lineHeight: "19.2px",
 										letterSpacing: 0,
+										cursor: "pointer",
 									}}
-									className="hover:border-white/50 hover:bg-white/10"
+									className="hover:text-[#82DEF5] hover:border-[#82DEF5]/40 hover:bg-white/[0.04] hover:scale-[1.015] active:scale-[0.97] transition-all duration-300 ease-out"
 								>
 									<span
 										style={{
@@ -191,8 +194,8 @@ export default function Home() {
 			</section>
 
 			{/* Remove duplicate hero section content */}
-			<section className="relative mx-auto max-w-6xl px-6 py-28 text-white z-10">
-					<div className="mt-14 grid grid-cols-1 lg:grid-cols-4 gap-0 text-center lg:divide-x-2 lg:divide-[#2EA9FF]">
+			<section className="relative mx-auto max-w-6xl px-6 pt-10 pb-20 text-white z-10">
+					<div className="grid grid-cols-1 lg:grid-cols-4 gap-0 text-center lg:divide-x-2 lg:divide-[#2EA9FF]">
 						<div className="px-6 py-8 bg-transparent">
 							<div className="text-3xl font-bold text-white">+ 120k</div>
 							<div className="mt-3 text-white/80">{t("stats.processed")}</div>
@@ -213,109 +216,131 @@ export default function Home() {
 			</section>
 
 			{/* ====== Features Section ====== */}
-			<section className="relative mx-auto max-w-6xl px-6 pb-24 text-white">
-				<div className="text-center mb-10">
-					<div className="text-white/70">{t("features.title_small")}</div>
-					<h2 className="mt-3 text-3xl sm:text-4xl font-bold">{t("features.title")}</h2>
-				</div>
-				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-					<Card className="p-6">
-						<div className="flex items-start gap-4">
-							<Image src="/file.svg" alt="" width={32} height={32} />
-							<div>
-								<div className="text-xl font-semibold">{t("features.items.scalable_title")}</div>
-								<p className="mt-2 text-white/80">{t("features.items.scalable_desc")}</p>
-							</div>
-						</div>
-					</Card>
-					<Card className="p-6">
-						<div className="flex items-start gap-4">
-							<Image src="/file.svg" alt="" width={32} height={32} />
-							<div>
-								<div className="text-xl font-semibold">{t("features.items.secure_title")}</div>
-								<p className="mt-2 text-white/80">{t("features.items.secure_desc")}</p>
-							</div>
-						</div>
-					</Card>
-					<Card className="p-6">
-						<div className="flex items-start gap-4">
-							<Image src="/file.svg" alt="" width={32} height={32} />
-							<div>
-								<div className="text-xl font-semibold">{t("features.items.platform_title")}</div>
-								<p className="mt-2 text-white/80">{t("features.items.platform_desc")}</p>
-							</div>
-						</div>
-					</Card>
-					<Card className="p-6">
-						<div className="flex items-start gap-4">
-							<Image src="/file.svg" alt="" width={32} height={32} />
-							<div>
-								<div className="text-xl font-semibold">{t("features.items.quick_title")}</div>
-								<p className="mt-2 text-white/80">{t("features.items.quick_desc")}</p>
-							</div>
-						</div>
-					</Card>
-					<Card className="p-6">
-						<div className="flex items-start gap-4">
-							<Image src="/file.svg" alt="" width={32} height={32} />
-							<div>
-								<div className="text-xl font-semibold">{t("features.items.integration_title")}</div>
-								<p className="mt-2 text-white/80">{t("features.items.integration_desc")}</p>
-							</div>
-						</div>
-					</Card>
-					<Card className="p-6">
-						<div className="flex items-start gap-4">
-							<Image src="/file.svg" alt="" width={32} height={32} />
-							<div>
-								<div className="text-xl font-semibold">{t("features.items.transparent_title")}</div>
-								<p className="mt-2 text-white/80">{t("features.items.transparent_desc")}</p>
-							</div>
-						</div>
-					</Card>
-				</div>
+			<section className="relative mx-auto max-w-[1193.59px] px-6 pb-28 text-white">
+				<WhyChooseCards
+					translationPrefix="features_page"
+					smallTitle={t("features.title_small")}
+					title={t("features.title")}
+				/>
 			</section>
 
 			{/* ====== About Section ====== */}
-			<section className="relative mx-auto max-w-6xl px-6 pb-24 text-white">
-				<div className="flex flex-col lg:flex-row items-center gap-8 min-h-[420px] rounded-[10px]">
-					{/* Text Section */}
-					<div className="flex-1 flex flex-col justify-center items-start max-w-[700px] mx-auto">
-						<div className="mb-2 text-white/70 text-base font-semibold">{t("about.small")}</div>
-						<h3 className="text-3xl sm:text-4xl font-extrabold mb-5 text-white" style={{ fontFamily: "inherit" }}>
+			<section className="relative mx-auto max-w-[1193.59px] px-6 pb-28 text-white">
+				<div
+					className={`flex flex-col lg:flex-row items-center justify-between ${isRTL ? "lg:flex-row-reverse" : ""}`}
+					style={{ minHeight: 420 }}
+				>
+					<div className="flex-1" style={{ maxWidth: 662 }} dir={isRTL ? "rtl" : "ltr"}>
+						<span
+							className="text-[#2EA9FF] text-sm font-semibold tracking-wide uppercase"
+							style={{ fontFamily: "Commissioner" }}
+						>
+							{t("about.small")}
+						</span>
+						<h3
+							className="mt-3 text-[30px]"
+							style={{
+								fontFamily: "Orbitron",
+								fontWeight: 700,
+								lineHeight: "100%",
+								textTransform: "capitalize",
+							}}
+						>
 							{t("about.title")}
 						</h3>
-						<div className="flex w-full">
+
+						<div className="mt-5 flex">
 							<div
-								className={`${isRTL ? "border-r-4" : "border-l-4"} border-[#2EA9FF] bg-transparent ps-4 pe-2 py-2 text-white/90 text-base leading-relaxed font-medium`}
-								style={{ minWidth: "6px" }}
+								className="border-s-4 border-[#2EA9FF] ps-4"
+								style={{
+									maxWidth: 624,
+									fontFamily: "Commissioner",
+									fontWeight: 400,
+									fontSize: 16,
+									lineHeight: "24px",
+								}}
 							>
 								{t("about.description")}
 							</div>
 						</div>
-						<p className="mt-5 text-white/85 leading-relaxed text-base">{t("about.description2")}</p>
-						<div className="mt-8 flex justify-start">
-						<CTAButton href="/sign-in" reverseIcon={isRTL} style={{ height: 42, paddingLeft: 24, paddingRight: 24 }}>
-							{t("home.cta_start")}
-						</CTAButton>
+
+						<p
+							className="mt-4"
+							style={{
+								fontFamily: "Commissioner",
+								fontWeight: 400,
+								fontSize: 16,
+								lineHeight: "24px",
+								color: "rgba(255, 255, 255, 0.7)",
+							}}
+						>
+							{t("about.description2")}
+						</p>
+
+						<div className={`mt-8 flex ${isRTL ? "justify-end" : "justify-start"}`}>
+							<CTAButton href="/contact" reverseIcon={isRTL}>
+								{t("home.cta_start")}
+							</CTAButton>
 						</div>
 					</div>
-					{/* Image Section */}
-					<div className="flex justify-center items-center w-[418px]">
+
+					{/* Image Section with glow */}
+					<div className="relative shrink-0 mt-10 lg:mt-0" style={{ width: 420, height: 370 }}>
+						<div
+							className="pointer-events-none absolute rounded-full"
+							style={{
+								width: 320,
+								height: 320,
+								top: "50%",
+								left: "50%",
+								transform: "translate(-50%, -50%)",
+								backgroundColor: "rgba(0, 122, 255, 0.35)",
+								filter: "blur(120px)",
+								mixBlendMode: "plus-lighter",
+								zIndex: 0,
+							}}
+						/>
 						<Image
 							src="/chatbot-avatar.png"
 							alt="Chatbot Avatar"
-							width={418}
-							height={370}
+							fill
+							className="object-contain z-10"
 							priority
-							className="rounded-[10px]"
 						/>
 					</div>
 				</div>
 			</section>
 
 			{/* ====== How It Works Section ====== */}
-			<section className="relative mx-auto max-w-6xl px-6 pb-24 text-white">
+			<section className="relative mx-auto max-w-6xl px-6 pb-24 text-white overflow-visible">
+				{/* Glow left side */}
+				<GlowEffect
+					size={450}
+					top="40%"
+					left="-15%"
+					blur={350}
+					transform="translateY(-50%)"
+					zIndex={0}
+				/>
+				{/* Glow center */}
+				<GlowEffect
+					size={400}
+					top="50%"
+					left="45%"
+					blur={400}
+					color="#007AFF30"
+					transform="translate(-50%, -50%)"
+					zIndex={0}
+				/>
+				{/* Glow right side */}
+				<GlowEffect
+					size={400}
+					top="30%"
+					right="-12%"
+					blur={300}
+					color="#007AFF26"
+					zIndex={0}
+				/>
 				<div className="text-center mb-10">
 					<div className="text-white/70">{t("how.title_small")}</div>
 					<h2 className="mt-3 text-3xl sm:text-4xl font-bold">{t("how.title")}</h2>
@@ -424,7 +449,15 @@ export default function Home() {
 			</section>
 
 			{/* ====== Use Cases Section ====== */}
-			<section className="relative mx-auto max-w-[1193px] px-6 pb-28 text-white">
+			<section className="relative mx-auto max-w-[1193px] px-6 pb-28 text-white overflow-visible">
+				<GlowEffect
+					size={450}
+					top="30%"
+					right="-15%"
+					blur={350}
+					color="#007AFF30"
+					zIndex={0}
+				/>
 				<div className={`flex items-center justify-between rounded-[10px] ${isRTL ? "flex-row-reverse" : ""}`} style={{ height: "363.91px" }}>
 					<div className="shrink-0 relative rounded-[10px] overflow-hidden">
 						<Image
@@ -468,69 +501,118 @@ export default function Home() {
 			</section>
 
 			{/* ====== Security Section ====== */}
-			<section className="relative mx-auto max-w-[1252px] px-6 pb-28 text-white">
+			<section className="relative mx-auto max-w-[1252px] px-6 pb-28 text-white overflow-visible">
+				<GlowEffect
+					size={450}
+					top="40%"
+					left="-12%"
+					blur={350}
+					color="#007AFF30"
+					transform="translateY(-50%)"
+					zIndex={0}
+				/>
+				<GlowEffect
+					size={400}
+					top="30%"
+					right="-14%"
+					blur={300}
+					color="#007AFF26"
+					zIndex={0}
+				/>
 				<div className="text-center mb-8">
 					<div className="text-white/70">{t("security.section_small")}</div>
 					<h2 className="mt-2 text-3xl sm:text-4xl font-bold">{t("security.title")}</h2>
 				</div>
-				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6" style={{ direction: "ltr" }}>
-					<Card className="p-7 min-h-[220px] border border-white/10 bg-[#0b1e36]/60 rounded-2xl">
-						<div className={`${isRTL ? "text-right" : "text-left"} space-y-3`} dir={isRTL ? "rtl" : "ltr"}>
-							<div className="text-[#2EA9FF]">
+				<div className="flex flex-wrap justify-center gap-5" style={{ direction: "ltr" }}>
+					{[
+						{
+							title: t("security.cards.rbac_title"),
+							desc: t("security.cards.rbac_desc"),
+							icon: (
 								<svg width="44" height="44" viewBox="0 0 24 24" fill="none">
-									<path
-										d="M6 6h.01M12 6h.01M18 6h.01M6 12h.01M12 12h.01M18 12h.01M6 18h.01M12 18h.01M18 18h.01"
-										stroke="#2EA9FF"
-										strokeWidth="2"
-										strokeLinecap="round"
-									/>
+									<path d="M6 6h.01M12 6h.01M18 6h.01M6 12h.01M12 12h.01M18 12h.01M6 18h.01M12 18h.01M18 18h.01" stroke="#2EA9FF" strokeWidth="2" strokeLinecap="round" />
 									<path d="M6 6v12M12 6v12M18 6v12" stroke="#2EA9FF33" strokeWidth="1" />
 								</svg>
-							</div>
-							<div className="text-lg font-semibold">{t("security.cards.rbac_title")}</div>
-							<p className="text-white/80 text-sm">{t("security.cards.rbac_desc")}</p>
-						</div>
-					</Card>
-
-					<Card className="p-7 min-h-[220px] border border-white/10 bg-[#0b1e36]/60 rounded-2xl">
-						<div className={`${isRTL ? "text-right" : "text-left"} space-y-3`} dir={isRTL ? "rtl" : "ltr"}>
-							<div className="text-[#2EA9FF]">
+							),
+						},
+						{
+							title: t("security.cards.encrypted_title"),
+							desc: t("security.cards.encrypted_desc"),
+							icon: (
 								<svg width="44" height="44" viewBox="0 0 24 24" fill="none">
 									<rect x="5" y="6" width="14" height="12" rx="2" stroke="#2EA9FF" strokeWidth="2" />
 									<path d="M9 10h6M9 14h6" stroke="#2EA9FF" strokeWidth="2" strokeLinecap="round" />
 									<path d="M16.5 7.5l2 2" stroke="#2EA9FF" strokeWidth="2" strokeLinecap="round" />
 								</svg>
-							</div>
-							<div className="text-lg font-semibold">{t("security.cards.encrypted_title")}</div>
-							<p className="text-white/80 text-sm">{t("security.cards.encrypted_desc")}</p>
-						</div>
-					</Card>
-
-					<Card className="p-7 min-h-[220px] border border-white/10 bg-[#0b1e36]/60 rounded-2xl">
-						<div className={`${isRTL ? "text-right" : "text-left"} space-y-3`} dir={isRTL ? "rtl" : "ltr"}>
-							<div className="text-[#2EA9FF]">
+							),
+						},
+						{
+							title: t("security.cards.gdpr_title"),
+							desc: t("security.cards.gdpr_desc"),
+							icon: (
 								<svg width="44" height="44" viewBox="0 0 24 24" fill="none">
 									<rect x="6" y="3" width="12" height="18" rx="2" stroke="#2EA9FF" strokeWidth="2" />
 									<path d="M8 7h8M8 11h8M8 15h6" stroke="#2EA9FF" strokeWidth="2" strokeLinecap="round" />
 								</svg>
-							</div>
-							<div className="text-lg font-semibold">{t("security.cards.gdpr_title")}</div>
-							<p className="text-white/80 text-sm">{t("security.cards.gdpr_desc")}</p>
-						</div>
-					</Card>
-
-					<Card className="p-7 min-h-[220px] border border-white/10 bg-[#0b1e36]/60 rounded-2xl">
-						<div className={`${isRTL ? "text-right" : "text-left"} space-y-3`} dir={isRTL ? "rtl" : "ltr"}>
-							<div className="text-[#2EA9FF]">
+							),
+						},
+						{
+							title: t("security.cards.audit_title"),
+							desc: t("security.cards.audit_desc"),
+							icon: (
 								<svg width="44" height="44" viewBox="0 0 24 24" fill="none">
 									<rect x="4" y="10" width="16" height="8" rx="2" stroke="#2EA9FF" strokeWidth="2" />
 									<path d="M8 10V8a4 4 0 118 0v2" stroke="#2EA9FF" strokeWidth="2" strokeLinecap="round" />
 								</svg>
+							),
+						},
+					].map((card, i) => (
+						<div
+							key={i}
+							className="relative overflow-hidden rounded-[10px]"
+							style={{
+								width: 285,
+								height: 210,
+								background: "rgba(0, 10, 19, 1)",
+							}}
+							dir={isRTL ? "rtl" : "ltr"}
+						>
+							<div className="flex h-full flex-col pt-4 px-6 pb-6">
+								<div className="flex justify-start">{card.icon}</div>
+								<div
+									className="mt-6"
+									style={{
+										fontFamily: "Commissioner",
+										fontWeight: 500,
+										fontSize: 16,
+										lineHeight: "24px",
+										color: "rgba(255, 255, 255, 1)",
+									}}
+								>
+									{card.title}
+								</div>
+								<div
+									className="mt-2"
+									style={{
+										fontFamily: "Commissioner",
+										fontWeight: 400,
+										fontSize: 13,
+										lineHeight: "20px",
+										color: "rgba(255, 255, 255, 0.7)",
+									}}
+								>
+									{card.desc}
+								</div>
 							</div>
-							<div className="text-lg font-semibold">{t("security.cards.audit_title")}</div>
-							<p className="text-white/80 text-sm">{t("security.cards.audit_desc")}</p>
+							{/* Bottom gradient border */}
+							<div
+								className="absolute bottom-0 left-0 h-px w-full"
+								style={{
+									background: "linear-gradient(270deg, rgba(0, 72, 139, 0) 5.77%, #007AEB 43.27%, #007AEB 66.35%, rgba(37, 37, 37, 0) 100%)",
+								}}
+							/>
 						</div>
-					</Card>
+					))}
 				</div>
 			</section>
 
@@ -668,7 +750,7 @@ export default function Home() {
 							</p>
 
 							<div className="mt-8 flex justify-center">
-								<CTAButton href="/sign-in">{t("support.cta")}</CTAButton>
+								<CTAButton href="/contact">{t("support.cta")}</CTAButton>
 							</div>
 						</div>
 					</div>
