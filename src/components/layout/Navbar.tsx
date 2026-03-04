@@ -5,10 +5,18 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
  import { useTranslation } from "react-i18next";
  import { usePathname } from "next/navigation";
- import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Dropdown } from "@/components/ui/dropdown";
  
  export function Navbar() {
+   const [scrolled, setScrolled] = useState(false);
+   useEffect(() => {
+     const handleScroll = () => {
+       setScrolled(window.scrollY > 10);
+     };
+     window.addEventListener("scroll", handleScroll);
+     return () => window.removeEventListener("scroll", handleScroll);
+   }, []);
    const { t, i18n } = useTranslation();
    const pathname = usePathname();
    const [open, setOpen] = useState(false);
@@ -24,7 +32,7 @@ import { Dropdown } from "@/components/ui/dropdown";
    ];
    return (
     <header 
-      className="fixed top-0 left-0 right-0 z-50 bg-transparent"
+      className={`fixed top-0 left-0 right-0 z-50 transition-colors duration-300 ${scrolled ? "bg-[#0A0F1E]/90 backdrop-blur-md shadow-lg" : "bg-transparent"}`}
     >
       <div className="px-4 sm:px-6 md:px-8 lg:px-[72px] py-7">
         <nav 
