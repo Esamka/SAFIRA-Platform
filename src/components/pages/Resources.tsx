@@ -60,7 +60,7 @@ export default function Resources() {
 				/>
 			</section>
 
-			<section className="relative mx-auto max-w-[1193.59px] px-6 py-12" dir={isRTL ? "rtl" : "ltr"}>
+			{/* <section className="relative mx-auto max-w-[1193.59px] px-6 py-12" dir={isRTL ? "rtl" : "ltr"}>
 				<div className="flex flex-wrap gap-3 sm:gap-4 md:gap-6 justify-center w-full">
 					{tabs.map((tab) => (
 						<button
@@ -79,7 +79,7 @@ export default function Resources() {
 						</button>
 					))}
 				</div>
-			</section>
+			</section> */}
 
 			<section className="relative mx-auto max-w-[1193.59px] px-6 py-20 flex justify-center">
 				{/* Glow — right side, top area */}
