@@ -134,8 +134,12 @@ export default function About() {
 							{t("about.mission_body")}
 						</p>
 
-						<div className={`mt-8 flex ${isRTL ? "justify-end" : "justify-start"}`}>
-							<CTAButton href="/contact" reverseIcon={isRTL}>
+						<div className="mt-8 w-full">
+							<CTAButton
+								href="/contact"
+								reverseIcon={isRTL}
+								className={isRTL ? "ml-auto" : "mr-auto"}
+							>
 								{t("home.cta_start")}
 							</CTAButton>
 						</div>
