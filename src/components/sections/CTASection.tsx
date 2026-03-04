@@ -95,7 +95,7 @@ export default function CTASection({
 
         {/* Button */}
         <div className="mt-4 flex flex-col sm:flex-row gap-3 sm:gap-4 items-center justify-center" style={{ flexDirection: isRTL ? "row-reverse" : undefined }}>
-          <CTAButton href={buttonHref}>
+          <CTAButton href={buttonHref} reverseIcon={isRTL}>
             {buttonText}
           </CTAButton>
           

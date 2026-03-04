@@ -87,7 +87,7 @@ export default function Home() {
 
 						{/* CTA Buttons */}
 						<div className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6 md:gap-10">
-							<CTAButton href="/contact">{t("home.cta_start")}</CTAButton>
+							<CTAButton href="/contact" reverseIcon={isRTL}>{t("home.cta_start")}</CTAButton>
 							<Link href="/contact">
 								<button
 									className="h-[50px] px-6 sm:px-8 rounded-[10px] border border-white/20 bg-transparent text-white flex items-center justify-center cursor-pointer hover:text-[#82DEF5] hover:border-[#82DEF5]/40 hover:bg-white/[0.04] hover:scale-[1.015] active:scale-[0.97] transition-all duration-300 ease-out"
@@ -384,16 +384,16 @@ export default function Home() {
 					zIndex={0}
 				/>
 				<div className={`flex flex-col lg:flex-row items-center justify-between rounded-[10px] gap-8 lg:gap-0 ${isRTL ? "lg:flex-row-reverse" : ""}`}>
-					<div className="shrink-0 relative rounded-[10px] overflow-hidden w-full lg:w-auto">
+					<div className="shrink-0 relative overflow-hidden w-full lg:w-auto">
+						{/* Responsive & Blended Glow Effect */}
 						<Image
-							src="/chatbot-hologram-social-network-icons-ai-communication 1.png"
-							alt="Chatbot Hologram"
+							src="/38665b3e-a07e-408a-80cd-a923fe9972a2.png"
+							alt="Chatbot Transparent"
 							width={536}
 							height={364}
 							priority
-							className="block w-full lg:w-[536px] h-auto"
+							className="block w-full lg:w-[536px] h-auto z-10"
 						/>
-						<div className="absolute inset-0" style={{ backgroundColor: "#0b274955", mixBlendMode: "plus-lighter" }} />
 					</div>
 					<div className={`flex-1 ps-0 lg:ps-8 ${isRTL ? "text-right" : "text-left"}`} dir={isRTL ? "rtl" : "ltr"}>
 						<div className="text-white/70">{t("usecases.title_small")}</div>
@@ -684,7 +684,7 @@ export default function Home() {
 							</p>
 
 							<div className="mt-6 sm:mt-8 flex justify-center">
-								<CTAButton href="/contact">{t("support.cta")}</CTAButton>
+								<CTAButton href="/contact" reverseIcon={isRTL}>{t("support.cta")}</CTAButton>
 							</div>
 						</div>
 					</div>

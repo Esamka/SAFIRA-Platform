@@ -189,17 +189,36 @@ export default function Contact() {
 								fontSize: 18,
 							}}
 						>
-							<span>Send</span>
-							<div className="flex items-center justify-center w-5 h-5 rounded-full bg-white">
-								<svg
-									width="12"
-									height="12"
-									viewBox="0 0 12 12"
-									fill="#007AEB"
-								>
-									<path d="M2 6h8M6 2l4 4-4 4" stroke="#007AEB" strokeWidth="1.5" />
-								</svg>
-							</div>
+							{isRTL ? (
+								<>
+									<div className="flex items-center justify-center w-5 h-5 rounded-full bg-white">
+										<svg
+											width="12"
+											height="12"
+											viewBox="0 0 12 12"
+											fill="#007AEB"
+											style={{ transform: "scaleX(-1)" }}
+										>
+											<path d="M2 6h8M6 2l4 4-4 4" stroke="#007AEB" strokeWidth="1.5" />
+										</svg>
+									</div>
+									<span>{t("contact.send")}</span>
+								</>
+							) : (
+								<>
+									<span>{t("contact.send")}</span>
+									<div className="flex items-center justify-center w-5 h-5 rounded-full bg-white">
+										<svg
+											width="12"
+											height="12"
+											viewBox="0 0 12 12"
+											fill="#007AEB"
+										>
+											<path d="M2 6h8M6 2l4 4-4 4" stroke="#007AEB" strokeWidth="1.5" />
+										</svg>
+									</div>
+								</>
+							)}
 						</button>
 					</form>
 				</div>

@@ -372,6 +372,7 @@
     "cta_secondary_button": "Contact Sales"
   },
   "contact": {
+    "send": "Send",
     "page_title": "Contact Us",
     "page_description": "to find out how the SAFIRA platform can enable your organization to deliver smart, automated\ndigital services.",
     "info_title": "Contact Information",
